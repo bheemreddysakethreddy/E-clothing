@@ -11,8 +11,8 @@ const {
 router
   .route("/")
   .post(HandlenewCartItem)
-  .get(HandleGetAllCartItems)
   .patch(HandleUpdateCartItem)
   .delete(HandleDeleteCartItem);
+router.route("/:user").get(HandleGetAllCartItems)
 
 module.exports = router;

@@ -2,11 +2,11 @@ const Cart = require("../models/carts");
 require("../models/products");
 
 async function HandleGetAllCartItems(req, res) {
-  let { user } = req.body;
+  let { user } = req.params;
   console.log(user);
   const userCart = await Cart.find({ user }).populate(
     "product",
-    "name price description image",
+    "name price description image quantity",
   );
   return res
     .status(200)
@@ -21,6 +21,7 @@ async function HandlenewCartItem(req, res) {
     { $inc: { quantity: quantity } },
     { new: true },
   );
+
   if (excistingCart) {
     return res.status(200).json({
       status: true,
@@ -42,8 +43,8 @@ async function HandlenewCartItem(req, res) {
 
 async function HandleUpdateCartItem(req, res) {
   const { user, product, quantityIncrease } = req.body;
+  console.log(user, product, quantityIncrease);
   let updatedCartProduct;
-  console.log(quantityIncrease);
   if (quantityIncrease) {
     updatedCartProduct = await Cart.findOneAndUpdate(
       { user, product },
@@ -66,6 +67,7 @@ async function HandleUpdateCartItem(req, res) {
 
 async function HandleDeleteCartItem(req, res) {
   const { user, product } = req.body;
+  console.log(user, product);
   const deleteCartProduct = await Cart.findOneAndDelete({ user, product });
   return res.status(201).json({
     status: true,
