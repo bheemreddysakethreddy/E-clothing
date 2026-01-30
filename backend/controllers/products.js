@@ -1,27 +1,14 @@
 const Products = require("../models/products");
 
 async function HandleGetAllProducts(req, res) {
-  //   const { category, trending } = req.query;
-  //   let filter = {};
-  //   if (category) {
-  //     filter.category = category;
-  //   }
-  //   if (trending) {
-  //     filter.trending = trending;
-  //   }
+  const { category, trending } = req.query;
   let products = await Products.find();
-  // console.log(products);
-  // console.log(req.query.category);
-  // let data
-  // if(req.query.category){
-  //  data = products.filter((obj) => obj.category == req.query.category);
-  // }
-  // else{
-  //   data = products
-  // }
-
-  let data = products.filter((obj) => obj.category == req.query.category);
-  console.log(data);
+  let data;
+  if (category) {
+    data = products.filter((obj) => obj.category == req.query.category);
+  } else {
+    data = products.filter((obj) => obj.trending);
+  }
 
   return res
     .status(200)

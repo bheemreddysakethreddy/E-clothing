@@ -1,0 +1,4629 @@
+{
+  "products":[
+    
+  {
+    "id": 1,
+    "name": "Floral Heels",
+    "price": 4373,
+    "category": "heels",
+    "section": "womens",
+    "trending": false,
+    "quantity": 136,
+    "rating": 4.7,
+    "description": "A floral heels made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cheels?lock=11",
+      "https://loremflickr.com/800/800/women%2Cheels?lock=12",
+      "https://loremflickr.com/800/800/women%2Cheels?lock=13",
+      "https://loremflickr.com/800/800/women%2Cheels?lock=14"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cheels?lock=100",
+    "reviews": [
+      {
+        "id": "rv-1-1",
+        "name": "Pooja",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 4.7,
+        "dateOfPurchase": {
+          "day": 13,
+          "month": 9,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 70,
+      "height_cm": 107,
+      "length_cm": 28
+    }
+  },
+  {
+    "id": 2,
+    "name": "Elegant Boots",
+    "price": 3351,
+    "category": "boots",
+    "section": "womens",
+    "trending": false,
+    "quantity": 107,
+    "rating": 4.1,
+    "description": "A elegant boots made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cboots?lock=21",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=22",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=23",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=24"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cboots?lock=200",
+    "reviews": [
+      {
+        "id": "rv-2-1",
+        "name": "Sameer",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 3.5,
+        "dateOfPurchase": {
+          "day": 28,
+          "month": 10,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-2-2",
+        "name": "Ayaan",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.4,
+        "dateOfPurchase": {
+          "day": 11,
+          "month": 10,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-2-3",
+        "name": "Pooja",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 4.5,
+        "dateOfPurchase": {
+          "day": 24,
+          "month": 3,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 2709,
+    "dimensions": {
+      "width_cm": 49,
+      "height_cm": 20,
+      "length_cm": 47
+    }
+  },
+  {
+    "id": 3,
+    "name": "Tiny Jacket",
+    "price": 1662,
+    "category": "kids_jacket",
+    "section": "kids",
+    "trending": false,
+    "quantity": 139,
+    "rating": 4.7,
+    "description": "A tiny jacket made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=31",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=32",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=33",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=34"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cjacket?lock=300",
+    "reviews": [
+      {
+        "id": "rv-3-1",
+        "name": "Vikram",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 4.7,
+        "dateOfPurchase": {
+          "day": 11,
+          "month": 9,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 29,
+      "height_cm": 67,
+      "length_cm": 49
+    }
+  },
+  {
+    "id": 4,
+    "name": "Soft Shorts",
+    "price": 4543,
+    "category": "shorts",
+    "section": "mens",
+    "trending": false,
+    "quantity": 10,
+    "rating": 3.5,
+    "description": "A soft shorts made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=41",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=42",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=43",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=44"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cshorts?lock=400",
+    "reviews": [
+      {
+        "id": "rv-4-1",
+        "name": "Priya",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 3.0,
+        "dateOfPurchase": {
+          "day": 16,
+          "month": 4,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-4-2",
+        "name": "Rohit",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 3.1,
+        "dateOfPurchase": {
+          "day": 11,
+          "month": 11,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-4-3",
+        "name": "Arjun",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.5,
+        "dateOfPurchase": {
+          "day": 19,
+          "month": 6,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 54,
+      "height_cm": 118,
+      "length_cm": 9
+    }
+  },
+  {
+    "id": 5,
+    "name": "Boho Skirt",
+    "price": 4702,
+    "category": "skirt",
+    "section": "womens",
+    "trending": false,
+    "quantity": 52,
+    "rating": 4.1,
+    "description": "A boho skirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=51",
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=52",
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=53",
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=54"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cskirt?lock=500",
+    "reviews": [
+      {
+        "id": "rv-5-1",
+        "name": "Dev",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 3.8,
+        "dateOfPurchase": {
+          "day": 12,
+          "month": 11,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-5-2",
+        "name": "Kriti",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 4.4,
+        "dateOfPurchase": {
+          "day": 23,
+          "month": 5,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 61,
+      "height_cm": 67,
+      "length_cm": 29
+    }
+  },
+  {
+    "id": 6,
+    "name": "Boho Leggings",
+    "price": 1190,
+    "category": "leggings",
+    "section": "womens",
+    "trending": false,
+    "quantity": 73,
+    "rating": 3.0,
+    "description": "A boho leggings made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=61",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=62",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=63",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=64"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cleggings?lock=600",
+    "reviews": [
+      {
+        "id": "rv-6-1",
+        "name": "Arjun",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.0,
+        "dateOfPurchase": {
+          "day": 29,
+          "month": 10,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 898,
+    "dimensions": {
+      "width_cm": 24,
+      "height_cm": 110,
+      "length_cm": 41
+    }
+  },
+  {
+    "id": 7,
+    "name": "Sport Tshirt",
+    "price": 751,
+    "category": "tshirt",
+    "section": "mens",
+    "trending": false,
+    "quantity": 18,
+    "rating": 3.4,
+    "description": "A sport tshirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=71",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=72",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=73",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=74"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Ctshirt?lock=700",
+    "reviews": [
+      {
+        "id": "rv-7-1",
+        "name": "Arjun",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 3.5,
+        "dateOfPurchase": {
+          "day": 20,
+          "month": 8,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-7-2",
+        "name": "Sakshi",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 3.3,
+        "dateOfPurchase": {
+          "day": 15,
+          "month": 11,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 35,
+      "height_cm": 120,
+      "length_cm": 31
+    }
+  },
+  {
+    "id": 8,
+    "name": "Mini Set",
+    "price": 971,
+    "category": "kids_set",
+    "section": "kids",
+    "trending": false,
+    "quantity": 34,
+    "rating": 4.2,
+    "description": "A mini set made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cset?lock=81",
+      "https://loremflickr.com/800/800/kids%2Cset?lock=82",
+      "https://loremflickr.com/800/800/kids%2Cset?lock=83",
+      "https://loremflickr.com/800/800/kids%2Cset?lock=84"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cset?lock=800",
+    "reviews": [
+      {
+        "id": "rv-8-1",
+        "name": "Maya",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.8,
+        "dateOfPurchase": {
+          "day": 1,
+          "month": 8,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-8-2",
+        "name": "Nikhil",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 19,
+          "month": 7,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-8-3",
+        "name": "Vihaan",
+        "descriptionOfProduct": "Super soft fabric, highly recommend.",
+        "rating": 4.5,
+        "dateOfPurchase": {
+          "day": 30,
+          "month": 7,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": 725,
+    "dimensions": {
+      "width_cm": 48,
+      "height_cm": 37,
+      "length_cm": 28
+    }
+  },
+  {
+    "id": 9,
+    "name": "Urban Shorts",
+    "price": 3988,
+    "category": "shorts",
+    "section": "mens",
+    "trending": false,
+    "quantity": 73,
+    "rating": 3.2,
+    "description": "A urban shorts made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=91",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=92",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=93",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=94"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cshorts?lock=900",
+    "reviews": [
+      {
+        "id": "rv-9-1",
+        "name": "Sameer",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 3.2,
+        "dateOfPurchase": {
+          "day": 15,
+          "month": 10,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 25,
+      "height_cm": 116,
+      "length_cm": 55
+    }
+  },
+  {
+    "id": 10,
+    "name": "Mini Shorts",
+    "price": 3528,
+    "category": "kids_shorts",
+    "section": "kids",
+    "trending": false,
+    "quantity": 134,
+    "rating": 4.9,
+    "description": "A mini shorts made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=101",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=102",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=103",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=104"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cshorts?lock=1000",
+    "reviews": [
+      {
+        "id": "rv-10-1",
+        "name": "Sakshi",
+        "descriptionOfProduct": "Super soft fabric, highly recommend.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 25,
+          "month": 9,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-10-2",
+        "name": "Karan",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 5.0,
+        "dateOfPurchase": {
+          "day": 6,
+          "month": 1,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 70,
+      "height_cm": 78,
+      "length_cm": 19
+    }
+  },
+  {
+    "id": 11,
+    "name": "Tiny Set",
+    "price": 4185,
+    "category": "kids_set",
+    "section": "kids",
+    "trending": false,
+    "quantity": 49,
+    "rating": 4.9,
+    "description": "A tiny set made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cset?lock=111",
+      "https://loremflickr.com/800/800/kids%2Cset?lock=112",
+      "https://loremflickr.com/800/800/kids%2Cset?lock=113",
+      "https://loremflickr.com/800/800/kids%2Cset?lock=114"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cset?lock=1100",
+    "reviews": [
+      {
+        "id": "rv-11-1",
+        "name": "Rohit",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 4.9,
+        "dateOfPurchase": {
+          "day": 24,
+          "month": 11,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 23,
+      "height_cm": 115,
+      "length_cm": 21
+    }
+  },
+  {
+    "id": 12,
+    "name": "Classic Tshirt",
+    "price": 4984,
+    "category": "tshirt",
+    "section": "mens",
+    "trending": false,
+    "quantity": 132,
+    "rating": 3.3,
+    "description": "A classic tshirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=121",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=122",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=123",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=124"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Ctshirt?lock=1200",
+    "reviews": [
+      {
+        "id": "rv-12-1",
+        "name": "Dev",
+        "descriptionOfProduct": "Very comfortable and stylish.",
+        "rating": 3.1,
+        "dateOfPurchase": {
+          "day": 12,
+          "month": 9,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-12-2",
+        "name": "Arjun",
+        "descriptionOfProduct": "Very comfortable and stylish.",
+        "rating": 3.1,
+        "dateOfPurchase": {
+          "day": 18,
+          "month": 6,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-12-3",
+        "name": "Sneha",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 3.8,
+        "dateOfPurchase": {
+          "day": 14,
+          "month": 11,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 4229,
+    "dimensions": {
+      "width_cm": 59,
+      "height_cm": 30,
+      "length_cm": 27
+    }
+  },
+  {
+    "id": 13,
+    "name": "Modern Boots",
+    "price": 4481,
+    "category": "boots",
+    "section": "womens",
+    "trending": false,
+    "quantity": 90,
+    "rating": 3.7,
+    "description": "A modern boots made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cboots?lock=131",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=132",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=133",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=134"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cboots?lock=1300",
+    "reviews": [
+      {
+        "id": "rv-13-1",
+        "name": "Sakshi",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.5,
+        "dateOfPurchase": {
+          "day": 20,
+          "month": 5,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-13-2",
+        "name": "Ananya",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 3.9,
+        "dateOfPurchase": {
+          "day": 23,
+          "month": 6,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": 3832,
+    "dimensions": {
+      "width_cm": 56,
+      "height_cm": 32,
+      "length_cm": 5
+    }
+  },
+  {
+    "id": 14,
+    "name": "Floral Leggings",
+    "price": 4343,
+    "category": "leggings",
+    "section": "womens",
+    "trending": false,
+    "quantity": 77,
+    "rating": 4.8,
+    "description": "A floral leggings made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=141",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=142",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=143",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=144"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cleggings?lock=1400",
+    "reviews": [
+      {
+        "id": "rv-14-1",
+        "name": "Asha",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 23,
+          "month": 4,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 3515,
+    "dimensions": {
+      "width_cm": 54,
+      "height_cm": 110,
+      "length_cm": 20
+    }
+  },
+  {
+    "id": 15,
+    "name": "Tiny Hat",
+    "price": 263,
+    "category": "kids_hat",
+    "section": "kids",
+    "trending": false,
+    "quantity": 180,
+    "rating": 4.4,
+    "description": "A tiny hat made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Chat?lock=151",
+      "https://loremflickr.com/800/800/kids%2Chat?lock=152",
+      "https://loremflickr.com/800/800/kids%2Chat?lock=153",
+      "https://loremflickr.com/800/800/kids%2Chat?lock=154"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Chat?lock=1500",
+    "reviews": [
+      {
+        "id": "rv-15-1",
+        "name": "Rohit",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.9,
+        "dateOfPurchase": {
+          "day": 25,
+          "month": 8,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-15-2",
+        "name": "Kavya",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 28,
+          "month": 10,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-15-3",
+        "name": "Ananya",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 3.6,
+        "dateOfPurchase": {
+          "day": 11,
+          "month": 11,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 33,
+      "height_cm": 107,
+      "length_cm": 41
+    }
+  },
+  {
+    "id": 16,
+    "name": "Modern Handbag",
+    "price": 4201,
+    "category": "handbag",
+    "section": "womens",
+    "trending": false,
+    "quantity": 74,
+    "rating": 4.7,
+    "description": "A modern handbag made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Chandbag?lock=161",
+      "https://loremflickr.com/800/800/women%2Chandbag?lock=162",
+      "https://loremflickr.com/800/800/women%2Chandbag?lock=163",
+      "https://loremflickr.com/800/800/women%2Chandbag?lock=164"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Chandbag?lock=1600",
+    "reviews": [
+      {
+        "id": "rv-16-1",
+        "name": "Arjun",
+        "descriptionOfProduct": "Super soft fabric, highly recommend.",
+        "rating": 4.7,
+        "dateOfPurchase": {
+          "day": 25,
+          "month": 5,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": 3750,
+    "dimensions": {
+      "width_cm": 60,
+      "height_cm": 53,
+      "length_cm": 11
+    }
+  },
+  {
+    "id": 17,
+    "name": "Modern Cardigan",
+    "price": 3702,
+    "category": "cardigan",
+    "section": "womens",
+    "trending": false,
+    "quantity": 153,
+    "rating": 4.9,
+    "description": "A modern cardigan made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=171",
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=172",
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=173",
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=174"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Ccardigan?lock=1700",
+    "reviews": [
+      {
+        "id": "rv-17-1",
+        "name": "Riya",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.9,
+        "dateOfPurchase": {
+          "day": 9,
+          "month": 9,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 73,
+      "height_cm": 67,
+      "length_cm": 38
+    }
+  },
+  {
+    "id": 18,
+    "name": "Mini Sneakers",
+    "price": 3719,
+    "category": "kids_sneakers",
+    "section": "kids",
+    "trending": true,
+    "quantity": 42,
+    "rating": 4.8,
+    "description": "A mini sneakers made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=181",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=182",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=183",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=184"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Csneakers?lock=1800",
+    "reviews": [
+      {
+        "id": "rv-18-1",
+        "name": "Rohit",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 20,
+          "month": 5,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 33,
+      "height_cm": 107,
+      "length_cm": 16
+    }
+  },
+  {
+    "id": 19,
+    "name": "Cute Dress",
+    "price": 4785,
+    "category": "kids_dress",
+    "section": "kids",
+    "trending": true,
+    "quantity": 114,
+    "rating": 4.8,
+    "description": "A cute dress made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=191",
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=192",
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=193",
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=194"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cdress?lock=1900",
+    "reviews": [
+      {
+        "id": "rv-19-1",
+        "name": "Nikhil",
+        "descriptionOfProduct": "Very comfortable and stylish.",
+        "rating": 4.9,
+        "dateOfPurchase": {
+          "day": 8,
+          "month": 12,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-19-2",
+        "name": "Ishaan",
+        "descriptionOfProduct": "Very comfortable and stylish.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 5,
+          "month": 5,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-19-3",
+        "name": "Ishaan",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 4.6,
+        "dateOfPurchase": {
+          "day": 5,
+          "month": 6,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 75,
+      "height_cm": 114,
+      "length_cm": 52
+    }
+  },
+  {
+    "id": 20,
+    "name": "Chic Heels",
+    "price": 1503,
+    "category": "heels",
+    "section": "womens",
+    "trending": false,
+    "quantity": 189,
+    "rating": 4.7,
+    "description": "A chic heels made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cheels?lock=201",
+      "https://loremflickr.com/800/800/women%2Cheels?lock=202",
+      "https://loremflickr.com/800/800/women%2Cheels?lock=203",
+      "https://loremflickr.com/800/800/women%2Cheels?lock=204"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cheels?lock=2000",
+    "reviews": [
+      {
+        "id": "rv-20-1",
+        "name": "Karan",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 4.7,
+        "dateOfPurchase": {
+          "day": 23,
+          "month": 11,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": 1397,
+    "dimensions": {
+      "width_cm": 42,
+      "height_cm": 59,
+      "length_cm": 53
+    }
+  },
+  {
+    "id": 21,
+    "name": "Sport Jeans",
+    "price": 392,
+    "category": "jeans",
+    "section": "mens",
+    "trending": false,
+    "quantity": 178,
+    "rating": 3.6,
+    "description": "A sport jeans made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=211",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=212",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=213",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=214"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cjeans?lock=2100",
+    "reviews": [
+      {
+        "id": "rv-21-1",
+        "name": "Karan",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.6,
+        "dateOfPurchase": {
+          "day": 20,
+          "month": 6,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 37,
+      "height_cm": 64,
+      "length_cm": 42
+    }
+  },
+  {
+    "id": 22,
+    "name": "Vintage Trousers",
+    "price": 4591,
+    "category": "trousers",
+    "section": "mens",
+    "trending": false,
+    "quantity": 94,
+    "rating": 3.4,
+    "description": "A vintage trousers made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Ctrousers?lock=221",
+      "https://loremflickr.com/800/800/men%2Ctrousers?lock=222",
+      "https://loremflickr.com/800/800/men%2Ctrousers?lock=223",
+      "https://loremflickr.com/800/800/men%2Ctrousers?lock=224"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Ctrousers?lock=2200",
+    "reviews": [
+      {
+        "id": "rv-22-1",
+        "name": "Riya",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 3.4,
+        "dateOfPurchase": {
+          "day": 6,
+          "month": 1,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 3898,
+    "dimensions": {
+      "width_cm": 42,
+      "height_cm": 113,
+      "length_cm": 51
+    }
+  },
+  {
+    "id": 23,
+    "name": "Vintage Shirt",
+    "price": 4388,
+    "category": "shirt",
+    "section": "mens",
+    "trending": false,
+    "quantity": 39,
+    "rating": 4.2,
+    "description": "A vintage shirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=231",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=232",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=233",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=234"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cshirt?lock=2300",
+    "reviews": [
+      {
+        "id": "rv-23-1",
+        "name": "Rahul",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 3.5,
+        "dateOfPurchase": {
+          "day": 30,
+          "month": 6,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-23-2",
+        "name": "Ayaan",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 4.9,
+        "dateOfPurchase": {
+          "day": 13,
+          "month": 10,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 80,
+      "height_cm": 114,
+      "length_cm": 48
+    }
+  },
+  {
+    "id": 24,
+    "name": "Cute Shorts",
+    "price": 3732,
+    "category": "kids_shorts",
+    "section": "kids",
+    "trending": false,
+    "quantity": 27,
+    "rating": 4.0,
+    "description": "A cute shorts made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=241",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=242",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=243",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=244"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cshorts?lock=2400",
+    "reviews": [
+      {
+        "id": "rv-24-1",
+        "name": "Priya",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 3.6,
+        "dateOfPurchase": {
+          "day": 15,
+          "month": 8,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-24-2",
+        "name": "Nikhil",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 4.0,
+        "dateOfPurchase": {
+          "day": 2,
+          "month": 6,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-24-3",
+        "name": "Priya",
+        "descriptionOfProduct": "Super soft fabric, highly recommend.",
+        "rating": 4.4,
+        "dateOfPurchase": {
+          "day": 29,
+          "month": 10,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 3004,
+    "dimensions": {
+      "width_cm": 80,
+      "height_cm": 68,
+      "length_cm": 44
+    }
+  },
+  {
+    "id": 25,
+    "name": "Tiny Shoes",
+    "price": 4861,
+    "category": "kids_shoes",
+    "section": "kids",
+    "trending": false,
+    "quantity": 87,
+    "rating": 3.9,
+    "description": "A tiny shoes made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cshoes?lock=251",
+      "https://loremflickr.com/800/800/kids%2Cshoes?lock=252",
+      "https://loremflickr.com/800/800/kids%2Cshoes?lock=253",
+      "https://loremflickr.com/800/800/kids%2Cshoes?lock=254"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cshoes?lock=2500",
+    "reviews": [
+      {
+        "id": "rv-25-1",
+        "name": "Kriti",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 3.6,
+        "dateOfPurchase": {
+          "day": 11,
+          "month": 11,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-25-2",
+        "name": "Maya",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 4.2,
+        "dateOfPurchase": {
+          "day": 5,
+          "month": 3,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 48,
+      "height_cm": 106,
+      "length_cm": 14
+    }
+  },
+  {
+    "id": 26,
+    "name": "Boho Leggings",
+    "price": 1589,
+    "category": "leggings",
+    "section": "womens",
+    "trending": false,
+    "quantity": 178,
+    "rating": 4.3,
+    "description": "A boho leggings made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=261",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=262",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=263",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=264"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cleggings?lock=2600",
+    "reviews": [
+      {
+        "id": "rv-26-1",
+        "name": "Rohit",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 19,
+          "month": 3,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 1490,
+    "dimensions": {
+      "width_cm": 35,
+      "height_cm": 106,
+      "length_cm": 20
+    }
+  },
+  {
+    "id": 27,
+    "name": "Mini Shorts",
+    "price": 1406,
+    "category": "kids_shorts",
+    "section": "kids",
+    "trending": false,
+    "quantity": 16,
+    "rating": 4.2,
+    "description": "A mini shorts made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=271",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=272",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=273",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=274"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cshorts?lock=2700",
+    "reviews": [
+      {
+        "id": "rv-27-1",
+        "name": "Neha",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 4.2,
+        "dateOfPurchase": {
+          "day": 23,
+          "month": 6,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 76,
+      "height_cm": 100,
+      "length_cm": 37
+    }
+  },
+  {
+    "id": 28,
+    "name": "Vintage Jeans",
+    "price": 4248,
+    "category": "jeans",
+    "section": "mens",
+    "trending": true,
+    "quantity": 112,
+    "rating": 4.8,
+    "description": "A vintage jeans made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=281",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=282",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=283",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=284"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cjeans?lock=2800",
+    "reviews": [
+      {
+        "id": "rv-28-1",
+        "name": "Ananya",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 28,
+          "month": 7,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 34,
+      "height_cm": 42,
+      "length_cm": 52
+    }
+  },
+  {
+    "id": 29,
+    "name": "Comfy Sneakers",
+    "price": 610,
+    "category": "kids_sneakers",
+    "section": "kids",
+    "trending": false,
+    "quantity": 152,
+    "rating": 3.3,
+    "description": "A comfy sneakers made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=291",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=292",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=293",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=294"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Csneakers?lock=2900",
+    "reviews": [
+      {
+        "id": "rv-29-1",
+        "name": "Riya",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 3.3,
+        "dateOfPurchase": {
+          "day": 29,
+          "month": 7,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 55,
+      "height_cm": 96,
+      "length_cm": 21
+    }
+  },
+  {
+    "id": 30,
+    "name": "Modern Cardigan",
+    "price": 4334,
+    "category": "cardigan",
+    "section": "womens",
+    "trending": false,
+    "quantity": 119,
+    "rating": 4.3,
+    "description": "A modern cardigan made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=301",
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=302",
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=303",
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=304"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Ccardigan?lock=3000",
+    "reviews": [
+      {
+        "id": "rv-30-1",
+        "name": "Sameer",
+        "descriptionOfProduct": "Very comfortable and stylish.",
+        "rating": 4.5,
+        "dateOfPurchase": {
+          "day": 9,
+          "month": 8,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-30-2",
+        "name": "Sameer",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 4.5,
+        "dateOfPurchase": {
+          "day": 18,
+          "month": 1,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-30-3",
+        "name": "Pooja",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 4.0,
+        "dateOfPurchase": {
+          "day": 10,
+          "month": 12,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": 3117,
+    "dimensions": {
+      "width_cm": 38,
+      "height_cm": 50,
+      "length_cm": 18
+    }
+  },
+  {
+    "id": 31,
+    "name": "Urban Shirt",
+    "price": 4623,
+    "category": "shirt",
+    "section": "mens",
+    "trending": false,
+    "quantity": 30,
+    "rating": 3.8,
+    "description": "A urban shirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=311",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=312",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=313",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=314"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cshirt?lock=3100",
+    "reviews": [
+      {
+        "id": "rv-31-1",
+        "name": "Ananya",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 3.8,
+        "dateOfPurchase": {
+          "day": 13,
+          "month": 9,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 24,
+      "height_cm": 73,
+      "length_cm": 27
+    }
+  },
+  {
+    "id": 32,
+    "name": "Modern Blouse",
+    "price": 4015,
+    "category": "blouse",
+    "section": "womens",
+    "trending": true,
+    "quantity": 116,
+    "rating": 3.8,
+    "description": "A modern blouse made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cblouse?lock=321",
+      "https://loremflickr.com/800/800/women%2Cblouse?lock=322",
+      "https://loremflickr.com/800/800/women%2Cblouse?lock=323",
+      "https://loremflickr.com/800/800/women%2Cblouse?lock=324"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cblouse?lock=3200",
+    "reviews": [
+      {
+        "id": "rv-32-1",
+        "name": "Sakshi",
+        "descriptionOfProduct": "Super soft fabric, highly recommend.",
+        "rating": 3.8,
+        "dateOfPurchase": {
+          "day": 29,
+          "month": 11,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 21,
+      "height_cm": 117,
+      "length_cm": 37
+    }
+  },
+  {
+    "id": 33,
+    "name": "Boho Jumpsuit",
+    "price": 247,
+    "category": "jumpsuit",
+    "section": "womens",
+    "trending": false,
+    "quantity": 100,
+    "rating": 4.7,
+    "description": "A boho jumpsuit made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cjumpsuit?lock=331",
+      "https://loremflickr.com/800/800/women%2Cjumpsuit?lock=332",
+      "https://loremflickr.com/800/800/women%2Cjumpsuit?lock=333",
+      "https://loremflickr.com/800/800/women%2Cjumpsuit?lock=334"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cjumpsuit?lock=3300",
+    "reviews": [
+      {
+        "id": "rv-33-1",
+        "name": "Pooja",
+        "descriptionOfProduct": "Super soft fabric, highly recommend.",
+        "rating": 4.7,
+        "dateOfPurchase": {
+          "day": 13,
+          "month": 6,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-33-2",
+        "name": "Kriti",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 4.6,
+        "dateOfPurchase": {
+          "day": 21,
+          "month": 11,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 37,
+      "height_cm": 75,
+      "length_cm": 32
+    }
+  },
+  {
+    "id": 34,
+    "name": "Boho Dress",
+    "price": 2952,
+    "category": "dress",
+    "section": "womens",
+    "trending": true,
+    "quantity": 181,
+    "rating": 4.0,
+    "description": "A boho dress made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cdress?lock=341",
+      "https://loremflickr.com/800/800/women%2Cdress?lock=342",
+      "https://loremflickr.com/800/800/women%2Cdress?lock=343",
+      "https://loremflickr.com/800/800/women%2Cdress?lock=344"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cdress?lock=3400",
+    "reviews": [
+      {
+        "id": "rv-34-1",
+        "name": "Karan",
+        "descriptionOfProduct": "Very comfortable and stylish.",
+        "rating": 4.7,
+        "dateOfPurchase": {
+          "day": 18,
+          "month": 8,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-34-2",
+        "name": "Simran",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 3.1,
+        "dateOfPurchase": {
+          "day": 18,
+          "month": 5,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-34-3",
+        "name": "Rahul",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 4,
+          "month": 7,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 28,
+      "height_cm": 79,
+      "length_cm": 12
+    }
+  },
+  {
+    "id": 35,
+    "name": "Cute Tshirt",
+    "price": 3304,
+    "category": "kids_tshirt",
+    "section": "kids",
+    "trending": false,
+    "quantity": 93,
+    "rating": 3.7,
+    "description": "A cute tshirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Ctshirt?lock=351",
+      "https://loremflickr.com/800/800/kids%2Ctshirt?lock=352",
+      "https://loremflickr.com/800/800/kids%2Ctshirt?lock=353",
+      "https://loremflickr.com/800/800/kids%2Ctshirt?lock=354"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Ctshirt?lock=3500",
+    "reviews": [
+      {
+        "id": "rv-35-1",
+        "name": "Sameer",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.7,
+        "dateOfPurchase": {
+          "day": 3,
+          "month": 5,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 3098,
+    "dimensions": {
+      "width_cm": 46,
+      "height_cm": 52,
+      "length_cm": 54
+    }
+  },
+  {
+    "id": 36,
+    "name": "Boho Top",
+    "price": 357,
+    "category": "top",
+    "section": "womens",
+    "trending": false,
+    "quantity": 148,
+    "rating": 4.3,
+    "description": "A boho top made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Ctop?lock=361",
+      "https://loremflickr.com/800/800/women%2Ctop?lock=362",
+      "https://loremflickr.com/800/800/women%2Ctop?lock=363",
+      "https://loremflickr.com/800/800/women%2Ctop?lock=364"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Ctop?lock=3600",
+    "reviews": [
+      {
+        "id": "rv-36-1",
+        "name": "Asha",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 21,
+          "month": 5,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 80,
+      "height_cm": 51,
+      "length_cm": 13
+    }
+  },
+  {
+    "id": 37,
+    "name": "Tiny Tshirt",
+    "price": 1447,
+    "category": "kids_tshirt",
+    "section": "kids",
+    "trending": false,
+    "quantity": 71,
+    "rating": 4.1,
+    "description": "A tiny tshirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Ctshirt?lock=371",
+      "https://loremflickr.com/800/800/kids%2Ctshirt?lock=372",
+      "https://loremflickr.com/800/800/kids%2Ctshirt?lock=373",
+      "https://loremflickr.com/800/800/kids%2Ctshirt?lock=374"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Ctshirt?lock=3700",
+    "reviews": [
+      {
+        "id": "rv-37-1",
+        "name": "Tara",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.1,
+        "dateOfPurchase": {
+          "day": 19,
+          "month": 11,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 36,
+      "height_cm": 118,
+      "length_cm": 24
+    }
+  },
+  {
+    "id": 38,
+    "name": "Modern Skirt",
+    "price": 1137,
+    "category": "skirt",
+    "section": "womens",
+    "trending": false,
+    "quantity": 51,
+    "rating": 3.5,
+    "description": "A modern skirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=381",
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=382",
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=383",
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=384"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cskirt?lock=3800",
+    "reviews": [
+      {
+        "id": "rv-38-1",
+        "name": "Riya",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 3.1,
+        "dateOfPurchase": {
+          "day": 23,
+          "month": 2,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-38-2",
+        "name": "Rahul",
+        "descriptionOfProduct": "Super soft fabric, highly recommend.",
+        "rating": 3.8,
+        "dateOfPurchase": {
+          "day": 30,
+          "month": 10,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": 992,
+    "dimensions": {
+      "width_cm": 60,
+      "height_cm": 51,
+      "length_cm": 7
+    }
+  },
+  {
+    "id": 39,
+    "name": "Tiny Jacket",
+    "price": 1190,
+    "category": "kids_jacket",
+    "section": "kids",
+    "trending": false,
+    "quantity": 154,
+    "rating": 3.9,
+    "description": "A tiny jacket made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=391",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=392",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=393",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=394"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cjacket?lock=3900",
+    "reviews": [
+      {
+        "id": "rv-39-1",
+        "name": "Asha",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 3.9,
+        "dateOfPurchase": {
+          "day": 24,
+          "month": 4,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 1025,
+    "dimensions": {
+      "width_cm": 20,
+      "height_cm": 73,
+      "length_cm": 53
+    }
+  },
+  {
+    "id": 40,
+    "name": "Classic Sweater",
+    "price": 3750,
+    "category": "sweater",
+    "section": "mens",
+    "trending": false,
+    "quantity": 102,
+    "rating": 4.0,
+    "description": "A classic sweater made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Csweater?lock=401",
+      "https://loremflickr.com/800/800/men%2Csweater?lock=402",
+      "https://loremflickr.com/800/800/men%2Csweater?lock=403",
+      "https://loremflickr.com/800/800/men%2Csweater?lock=404"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Csweater?lock=4000",
+    "reviews": [
+      {
+        "id": "rv-40-1",
+        "name": "Sameer",
+        "descriptionOfProduct": "Very comfortable and stylish.",
+        "rating": 3.9,
+        "dateOfPurchase": {
+          "day": 26,
+          "month": 9,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-40-2",
+        "name": "Vikram",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 4.2,
+        "dateOfPurchase": {
+          "day": 13,
+          "month": 10,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-40-3",
+        "name": "Pooja",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 3.9,
+        "dateOfPurchase": {
+          "day": 9,
+          "month": 1,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 2855,
+    "dimensions": {
+      "width_cm": 79,
+      "height_cm": 31,
+      "length_cm": 18
+    }
+  },
+  {
+    "id": 41,
+    "name": "Floral Cardigan",
+    "price": 4005,
+    "category": "cardigan",
+    "section": "womens",
+    "trending": true,
+    "quantity": 155,
+    "rating": 3.8,
+    "description": "A floral cardigan made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=411",
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=412",
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=413",
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=414"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Ccardigan?lock=4100",
+    "reviews": [
+      {
+        "id": "rv-41-1",
+        "name": "Sneha",
+        "descriptionOfProduct": "Super soft fabric, highly recommend.",
+        "rating": 3.7,
+        "dateOfPurchase": {
+          "day": 29,
+          "month": 8,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-41-2",
+        "name": "Priya",
+        "descriptionOfProduct": "Very comfortable and stylish.",
+        "rating": 4.0,
+        "dateOfPurchase": {
+          "day": 8,
+          "month": 4,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-41-3",
+        "name": "Kavya",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.6,
+        "dateOfPurchase": {
+          "day": 17,
+          "month": 1,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 53,
+      "height_cm": 44,
+      "length_cm": 6
+    }
+  },
+  {
+    "id": 42,
+    "name": "Vintage Jeans",
+    "price": 4201,
+    "category": "jeans",
+    "section": "mens",
+    "trending": false,
+    "quantity": 152,
+    "rating": 4.3,
+    "description": "A vintage jeans made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=421",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=422",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=423",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=424"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cjeans?lock=4200",
+    "reviews": [
+      {
+        "id": "rv-42-1",
+        "name": "Aditi",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 25,
+          "month": 8,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 21,
+      "height_cm": 31,
+      "length_cm": 19
+    }
+  },
+  {
+    "id": 43,
+    "name": "Boho Heels",
+    "price": 2192,
+    "category": "heels",
+    "section": "womens",
+    "trending": false,
+    "quantity": 88,
+    "rating": 4.4,
+    "description": "A boho heels made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cheels?lock=431",
+      "https://loremflickr.com/800/800/women%2Cheels?lock=432",
+      "https://loremflickr.com/800/800/women%2Cheels?lock=433",
+      "https://loremflickr.com/800/800/women%2Cheels?lock=434"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cheels?lock=4300",
+    "reviews": [
+      {
+        "id": "rv-43-1",
+        "name": "Rahul",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.9,
+        "dateOfPurchase": {
+          "day": 5,
+          "month": 10,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-43-2",
+        "name": "Asha",
+        "descriptionOfProduct": "Super soft fabric, highly recommend.",
+        "rating": 5.0,
+        "dateOfPurchase": {
+          "day": 25,
+          "month": 10,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-43-3",
+        "name": "Priya",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 4.4,
+        "dateOfPurchase": {
+          "day": 12,
+          "month": 1,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 1660,
+    "dimensions": {
+      "width_cm": 66,
+      "height_cm": 44,
+      "length_cm": 21
+    }
+  },
+  {
+    "id": 44,
+    "name": "Modern Top",
+    "price": 1715,
+    "category": "top",
+    "section": "womens",
+    "trending": false,
+    "quantity": 59,
+    "rating": 3.6,
+    "description": "A modern top made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Ctop?lock=441",
+      "https://loremflickr.com/800/800/women%2Ctop?lock=442",
+      "https://loremflickr.com/800/800/women%2Ctop?lock=443",
+      "https://loremflickr.com/800/800/women%2Ctop?lock=444"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Ctop?lock=4400",
+    "reviews": [
+      {
+        "id": "rv-44-1",
+        "name": "Nikhil",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 3.6,
+        "dateOfPurchase": {
+          "day": 29,
+          "month": 9,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 26,
+      "height_cm": 44,
+      "length_cm": 19
+    }
+  },
+  {
+    "id": 45,
+    "name": "Urban Jeans",
+    "price": 1668,
+    "category": "jeans",
+    "section": "mens",
+    "trending": false,
+    "quantity": 87,
+    "rating": 3.3,
+    "description": "A urban jeans made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=451",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=452",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=453",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=454"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cjeans?lock=4500",
+    "reviews": [
+      {
+        "id": "rv-45-1",
+        "name": "Aditi",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 3.3,
+        "dateOfPurchase": {
+          "day": 26,
+          "month": 5,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 55,
+      "height_cm": 57,
+      "length_cm": 45
+    }
+  },
+  {
+    "id": 46,
+    "name": "Comfy Shoes",
+    "price": 1039,
+    "category": "kids_shoes",
+    "section": "kids",
+    "trending": false,
+    "quantity": 13,
+    "rating": 3.8,
+    "description": "A comfy shoes made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cshoes?lock=461",
+      "https://loremflickr.com/800/800/kids%2Cshoes?lock=462",
+      "https://loremflickr.com/800/800/kids%2Cshoes?lock=463",
+      "https://loremflickr.com/800/800/kids%2Cshoes?lock=464"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cshoes?lock=4600",
+    "reviews": [
+      {
+        "id": "rv-46-1",
+        "name": "Rohit",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 4.0,
+        "dateOfPurchase": {
+          "day": 24,
+          "month": 3,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-46-2",
+        "name": "Ishaan",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 3.5,
+        "dateOfPurchase": {
+          "day": 12,
+          "month": 8,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-46-3",
+        "name": "Riya",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 3.8,
+        "dateOfPurchase": {
+          "day": 24,
+          "month": 6,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 63,
+      "height_cm": 26,
+      "length_cm": 10
+    }
+  },
+  {
+    "id": 47,
+    "name": "Modern Skirt",
+    "price": 2688,
+    "category": "skirt",
+    "section": "womens",
+    "trending": true,
+    "quantity": 31,
+    "rating": 4.5,
+    "description": "A modern skirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=471",
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=472",
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=473",
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=474"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cskirt?lock=4700",
+    "reviews": [
+      {
+        "id": "rv-47-1",
+        "name": "Riya",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 4.5,
+        "dateOfPurchase": {
+          "day": 27,
+          "month": 11,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 44,
+      "height_cm": 77,
+      "length_cm": 59
+    }
+  },
+  {
+    "id": 48,
+    "name": "Chic Cardigan",
+    "price": 3711,
+    "category": "cardigan",
+    "section": "womens",
+    "trending": false,
+    "quantity": 88,
+    "rating": 3.9,
+    "description": "A chic cardigan made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=481",
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=482",
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=483",
+      "https://loremflickr.com/800/800/women%2Ccardigan?lock=484"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Ccardigan?lock=4800",
+    "reviews": [
+      {
+        "id": "rv-48-1",
+        "name": "Simran",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 4.2,
+        "dateOfPurchase": {
+          "day": 20,
+          "month": 7,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-48-2",
+        "name": "Pooja",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 5,
+          "month": 1,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-48-3",
+        "name": "Sneha",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 3.3,
+        "dateOfPurchase": {
+          "day": 4,
+          "month": 10,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 30,
+      "height_cm": 20,
+      "length_cm": 27
+    }
+  },
+  {
+    "id": 49,
+    "name": "Soft Sweater",
+    "price": 4048,
+    "category": "sweater",
+    "section": "mens",
+    "trending": false,
+    "quantity": 84,
+    "rating": 4.4,
+    "description": "A soft sweater made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Csweater?lock=491",
+      "https://loremflickr.com/800/800/men%2Csweater?lock=492",
+      "https://loremflickr.com/800/800/men%2Csweater?lock=493",
+      "https://loremflickr.com/800/800/men%2Csweater?lock=494"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Csweater?lock=4900",
+    "reviews": [
+      {
+        "id": "rv-49-1",
+        "name": "Neha",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 4.4,
+        "dateOfPurchase": {
+          "day": 18,
+          "month": 7,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 3069,
+    "dimensions": {
+      "width_cm": 36,
+      "height_cm": 120,
+      "length_cm": 51
+    }
+  },
+  {
+    "id": 50,
+    "name": "Floral Boots",
+    "price": 3681,
+    "category": "boots",
+    "section": "womens",
+    "trending": false,
+    "quantity": 39,
+    "rating": 4.3,
+    "description": "A floral boots made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cboots?lock=501",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=502",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=503",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=504"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cboots?lock=5000",
+    "reviews": [
+      {
+        "id": "rv-50-1",
+        "name": "Neha",
+        "descriptionOfProduct": "Very comfortable and stylish.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 2,
+          "month": 9,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-50-2",
+        "name": "Arjun",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 3.3,
+        "dateOfPurchase": {
+          "day": 18,
+          "month": 2,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-50-3",
+        "name": "Simran",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 3,
+          "month": 7,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 3210,
+    "dimensions": {
+      "width_cm": 64,
+      "height_cm": 71,
+      "length_cm": 18
+    }
+  },
+  {
+    "id": 51,
+    "name": "Tiny Sneakers",
+    "price": 4244,
+    "category": "kids_sneakers",
+    "section": "kids",
+    "trending": true,
+    "quantity": 122,
+    "rating": 4.8,
+    "description": "A tiny sneakers made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=511",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=512",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=513",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=514"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Csneakers?lock=5100",
+    "reviews": [
+      {
+        "id": "rv-51-1",
+        "name": "Simran",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 6,
+          "month": 3,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 21,
+      "height_cm": 31,
+      "length_cm": 15
+    }
+  },
+  {
+    "id": 52,
+    "name": "Modern Boots",
+    "price": 368,
+    "category": "boots",
+    "section": "womens",
+    "trending": true,
+    "quantity": 182,
+    "rating": 4.4,
+    "description": "A modern boots made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cboots?lock=521",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=522",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=523",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=524"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cboots?lock=5200",
+    "reviews": [
+      {
+        "id": "rv-52-1",
+        "name": "Rahul",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 4.5,
+        "dateOfPurchase": {
+          "day": 6,
+          "month": 10,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-52-2",
+        "name": "Tara",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 19,
+          "month": 1,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 311,
+    "dimensions": {
+      "width_cm": 60,
+      "height_cm": 82,
+      "length_cm": 6
+    }
+  },
+  {
+    "id": 53,
+    "name": "Urban Sweater",
+    "price": 3544,
+    "category": "sweater",
+    "section": "mens",
+    "trending": false,
+    "quantity": 95,
+    "rating": 4.2,
+    "description": "A urban sweater made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Csweater?lock=531",
+      "https://loremflickr.com/800/800/men%2Csweater?lock=532",
+      "https://loremflickr.com/800/800/men%2Csweater?lock=533",
+      "https://loremflickr.com/800/800/men%2Csweater?lock=534"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Csweater?lock=5300",
+    "reviews": [
+      {
+        "id": "rv-53-1",
+        "name": "Sneha",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.7,
+        "dateOfPurchase": {
+          "day": 13,
+          "month": 3,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-53-2",
+        "name": "Maya",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 3.6,
+        "dateOfPurchase": {
+          "day": 25,
+          "month": 5,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 55,
+      "height_cm": 24,
+      "length_cm": 30
+    }
+  },
+  {
+    "id": 54,
+    "name": "Chic Top",
+    "price": 2266,
+    "category": "top",
+    "section": "womens",
+    "trending": false,
+    "quantity": 92,
+    "rating": 4.7,
+    "description": "A chic top made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Ctop?lock=541",
+      "https://loremflickr.com/800/800/women%2Ctop?lock=542",
+      "https://loremflickr.com/800/800/women%2Ctop?lock=543",
+      "https://loremflickr.com/800/800/women%2Ctop?lock=544"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Ctop?lock=5400",
+    "reviews": [
+      {
+        "id": "rv-54-1",
+        "name": "Pooja",
+        "descriptionOfProduct": "Super soft fabric, highly recommend.",
+        "rating": 4.7,
+        "dateOfPurchase": {
+          "day": 11,
+          "month": 4,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 54,
+      "height_cm": 79,
+      "length_cm": 27
+    }
+  },
+  {
+    "id": 55,
+    "name": "Sport Tshirt",
+    "price": 4446,
+    "category": "tshirt",
+    "section": "mens",
+    "trending": true,
+    "quantity": 102,
+    "rating": 3.9,
+    "description": "A sport tshirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=551",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=552",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=553",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=554"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Ctshirt?lock=5500",
+    "reviews": [
+      {
+        "id": "rv-55-1",
+        "name": "Pooja",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 1,
+          "month": 6,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-55-2",
+        "name": "Sakshi",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 4.1,
+        "dateOfPurchase": {
+          "day": 29,
+          "month": 1,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-55-3",
+        "name": "Sameer",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 3.2,
+        "dateOfPurchase": {
+          "day": 11,
+          "month": 12,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 39,
+      "height_cm": 90,
+      "length_cm": 1
+    }
+  },
+  {
+    "id": 56,
+    "name": "Boho Leggings",
+    "price": 962,
+    "category": "leggings",
+    "section": "womens",
+    "trending": false,
+    "quantity": 67,
+    "rating": 4.3,
+    "description": "A boho leggings made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=561",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=562",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=563",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=564"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cleggings?lock=5600",
+    "reviews": [
+      {
+        "id": "rv-56-1",
+        "name": "Sameer",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 14,
+          "month": 9,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 65,
+      "height_cm": 57,
+      "length_cm": 33
+    }
+  },
+  {
+    "id": 57,
+    "name": "Boho Handbag",
+    "price": 4151,
+    "category": "handbag",
+    "section": "womens",
+    "trending": false,
+    "quantity": 130,
+    "rating": 3.3,
+    "description": "A boho handbag made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Chandbag?lock=571",
+      "https://loremflickr.com/800/800/women%2Chandbag?lock=572",
+      "https://loremflickr.com/800/800/women%2Chandbag?lock=573",
+      "https://loremflickr.com/800/800/women%2Chandbag?lock=574"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Chandbag?lock=5700",
+    "reviews": [
+      {
+        "id": "rv-57-1",
+        "name": "Sameer",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 3.3,
+        "dateOfPurchase": {
+          "day": 22,
+          "month": 10,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 52,
+      "height_cm": 115,
+      "length_cm": 57
+    }
+  },
+  {
+    "id": 58,
+    "name": "Playful Shoes",
+    "price": 2462,
+    "category": "kids_shoes",
+    "section": "kids",
+    "trending": false,
+    "quantity": 116,
+    "rating": 4.7,
+    "description": "A playful shoes made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cshoes?lock=581",
+      "https://loremflickr.com/800/800/kids%2Cshoes?lock=582",
+      "https://loremflickr.com/800/800/kids%2Cshoes?lock=583",
+      "https://loremflickr.com/800/800/kids%2Cshoes?lock=584"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cshoes?lock=5800",
+    "reviews": [
+      {
+        "id": "rv-58-1",
+        "name": "Dev",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 4.6,
+        "dateOfPurchase": {
+          "day": 24,
+          "month": 1,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-58-2",
+        "name": "Nikhil",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 4.7,
+        "dateOfPurchase": {
+          "day": 24,
+          "month": 11,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 51,
+      "height_cm": 39,
+      "length_cm": 29
+    }
+  },
+  {
+    "id": 59,
+    "name": "Vintage Trousers",
+    "price": 3026,
+    "category": "trousers",
+    "section": "mens",
+    "trending": true,
+    "quantity": 95,
+    "rating": 3.7,
+    "description": "A vintage trousers made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Ctrousers?lock=591",
+      "https://loremflickr.com/800/800/men%2Ctrousers?lock=592",
+      "https://loremflickr.com/800/800/men%2Ctrousers?lock=593",
+      "https://loremflickr.com/800/800/men%2Ctrousers?lock=594"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Ctrousers?lock=5900",
+    "reviews": [
+      {
+        "id": "rv-59-1",
+        "name": "Pooja",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 3.8,
+        "dateOfPurchase": {
+          "day": 5,
+          "month": 3,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-59-2",
+        "name": "Sakshi",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 4.1,
+        "dateOfPurchase": {
+          "day": 5,
+          "month": 12,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-59-3",
+        "name": "Pooja",
+        "descriptionOfProduct": "Super soft fabric, highly recommend.",
+        "rating": 3.1,
+        "dateOfPurchase": {
+          "day": 7,
+          "month": 8,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 71,
+      "height_cm": 68,
+      "length_cm": 25
+    }
+  },
+  {
+    "id": 60,
+    "name": "Boho Skirt",
+    "price": 502,
+    "category": "skirt",
+    "section": "womens",
+    "trending": false,
+    "quantity": 42,
+    "rating": 4.4,
+    "description": "A boho skirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=601",
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=602",
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=603",
+      "https://loremflickr.com/800/800/women%2Cskirt?lock=604"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cskirt?lock=6000",
+    "reviews": [
+      {
+        "id": "rv-60-1",
+        "name": "Rahul",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 4.7,
+        "dateOfPurchase": {
+          "day": 4,
+          "month": 7,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-60-2",
+        "name": "Riya",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 25,
+          "month": 4,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-60-3",
+        "name": "Nikhil",
+        "descriptionOfProduct": "Very comfortable and stylish.",
+        "rating": 3.8,
+        "dateOfPurchase": {
+          "day": 15,
+          "month": 9,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": 449,
+    "dimensions": {
+      "width_cm": 36,
+      "height_cm": 63,
+      "length_cm": 40
+    }
+  },
+  {
+    "id": 61,
+    "name": "Classic Hoodie",
+    "price": 2890,
+    "category": "hoodie",
+    "section": "mens",
+    "trending": false,
+    "quantity": 182,
+    "rating": 4.5,
+    "description": "A classic hoodie made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Choodie?lock=611",
+      "https://loremflickr.com/800/800/men%2Choodie?lock=612",
+      "https://loremflickr.com/800/800/men%2Choodie?lock=613",
+      "https://loremflickr.com/800/800/men%2Choodie?lock=614"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Choodie?lock=6100",
+    "reviews": [
+      {
+        "id": "rv-61-1",
+        "name": "Karan",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 22,
+          "month": 8,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-61-2",
+        "name": "Kriti",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 4.2,
+        "dateOfPurchase": {
+          "day": 6,
+          "month": 12,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-61-3",
+        "name": "Vikram",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 5.0,
+        "dateOfPurchase": {
+          "day": 11,
+          "month": 7,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 26,
+      "height_cm": 117,
+      "length_cm": 41
+    }
+  },
+  {
+    "id": 62,
+    "name": "Vintage Jacket",
+    "price": 1561,
+    "category": "jacket",
+    "section": "mens",
+    "trending": false,
+    "quantity": 187,
+    "rating": 3.7,
+    "description": "A vintage jacket made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cjacket?lock=621",
+      "https://loremflickr.com/800/800/men%2Cjacket?lock=622",
+      "https://loremflickr.com/800/800/men%2Cjacket?lock=623",
+      "https://loremflickr.com/800/800/men%2Cjacket?lock=624"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cjacket?lock=6200",
+    "reviews": [
+      {
+        "id": "rv-62-1",
+        "name": "Ayaan",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 3.6,
+        "dateOfPurchase": {
+          "day": 6,
+          "month": 6,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-62-2",
+        "name": "Rohit",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.7,
+        "dateOfPurchase": {
+          "day": 6,
+          "month": 9,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": 1253,
+    "dimensions": {
+      "width_cm": 63,
+      "height_cm": 43,
+      "length_cm": 11
+    }
+  },
+  {
+    "id": 63,
+    "name": "Classic Shorts",
+    "price": 3332,
+    "category": "shorts",
+    "section": "mens",
+    "trending": false,
+    "quantity": 168,
+    "rating": 4.6,
+    "description": "A classic shorts made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=631",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=632",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=633",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=634"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cshorts?lock=6300",
+    "reviews": [
+      {
+        "id": "rv-63-1",
+        "name": "Neha",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 3,
+          "month": 9,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-63-2",
+        "name": "Neha",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 24,
+          "month": 7,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-63-3",
+        "name": "Kavya",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 30,
+          "month": 7,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 63,
+      "height_cm": 89,
+      "length_cm": 11
+    }
+  },
+  {
+    "id": 64,
+    "name": "Comfy Dress",
+    "price": 3029,
+    "category": "kids_dress",
+    "section": "kids",
+    "trending": true,
+    "quantity": 160,
+    "rating": 4.7,
+    "description": "A comfy dress made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=641",
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=642",
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=643",
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=644"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cdress?lock=6400",
+    "reviews": [
+      {
+        "id": "rv-64-1",
+        "name": "Vikram",
+        "descriptionOfProduct": "Super soft fabric, highly recommend.",
+        "rating": 4.4,
+        "dateOfPurchase": {
+          "day": 21,
+          "month": 7,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-64-2",
+        "name": "Rohit",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 5.0,
+        "dateOfPurchase": {
+          "day": 17,
+          "month": 8,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 2409,
+    "dimensions": {
+      "width_cm": 42,
+      "height_cm": 93,
+      "length_cm": 19
+    }
+  },
+  {
+    "id": 65,
+    "name": "Playful Jacket",
+    "price": 3441,
+    "category": "kids_jacket",
+    "section": "kids",
+    "trending": false,
+    "quantity": 80,
+    "rating": 4.8,
+    "description": "A playful jacket made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=651",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=652",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=653",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=654"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cjacket?lock=6500",
+    "reviews": [
+      {
+        "id": "rv-65-1",
+        "name": "Rahul",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 31,
+          "month": 8,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 77,
+      "height_cm": 56,
+      "length_cm": 50
+    }
+  },
+  {
+    "id": 66,
+    "name": "Soft Jeans",
+    "price": 3085,
+    "category": "jeans",
+    "section": "mens",
+    "trending": false,
+    "quantity": 66,
+    "rating": 3.8,
+    "description": "A soft jeans made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=661",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=662",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=663",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=664"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cjeans?lock=6600",
+    "reviews": [
+      {
+        "id": "rv-66-1",
+        "name": "Sakshi",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 3.5,
+        "dateOfPurchase": {
+          "day": 28,
+          "month": 8,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-66-2",
+        "name": "Vikram",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 20,
+          "month": 5,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-66-3",
+        "name": "Rohit",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 3.1,
+        "dateOfPurchase": {
+          "day": 18,
+          "month": 4,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 25,
+      "height_cm": 57,
+      "length_cm": 21
+    }
+  },
+  {
+    "id": 67,
+    "name": "Mini Set",
+    "price": 1843,
+    "category": "kids_set",
+    "section": "kids",
+    "trending": false,
+    "quantity": 43,
+    "rating": 4.5,
+    "description": "A mini set made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cset?lock=671",
+      "https://loremflickr.com/800/800/kids%2Cset?lock=672",
+      "https://loremflickr.com/800/800/kids%2Cset?lock=673",
+      "https://loremflickr.com/800/800/kids%2Cset?lock=674"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cset?lock=6700",
+    "reviews": [
+      {
+        "id": "rv-67-1",
+        "name": "Asha",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 4.0,
+        "dateOfPurchase": {
+          "day": 14,
+          "month": 1,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-67-2",
+        "name": "Ishaan",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 16,
+          "month": 8,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-67-3",
+        "name": "Rohit",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 4.6,
+        "dateOfPurchase": {
+          "day": 2,
+          "month": 8,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 29,
+      "height_cm": 116,
+      "length_cm": 15
+    }
+  },
+  {
+    "id": 68,
+    "name": "Modern Jumpsuit",
+    "price": 3195,
+    "category": "jumpsuit",
+    "section": "womens",
+    "trending": false,
+    "quantity": 33,
+    "rating": 4.2,
+    "description": "A modern jumpsuit made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cjumpsuit?lock=681",
+      "https://loremflickr.com/800/800/women%2Cjumpsuit?lock=682",
+      "https://loremflickr.com/800/800/women%2Cjumpsuit?lock=683",
+      "https://loremflickr.com/800/800/women%2Cjumpsuit?lock=684"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cjumpsuit?lock=6800",
+    "reviews": [
+      {
+        "id": "rv-68-1",
+        "name": "Ayaan",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 4.1,
+        "dateOfPurchase": {
+          "day": 19,
+          "month": 7,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-68-2",
+        "name": "Asha",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 4.2,
+        "dateOfPurchase": {
+          "day": 25,
+          "month": 4,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 2423,
+    "dimensions": {
+      "width_cm": 21,
+      "height_cm": 99,
+      "length_cm": 57
+    }
+  },
+  {
+    "id": 69,
+    "name": "Cute Sneakers",
+    "price": 2012,
+    "category": "kids_sneakers",
+    "section": "kids",
+    "trending": true,
+    "quantity": 175,
+    "rating": 4.8,
+    "description": "A cute sneakers made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=691",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=692",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=693",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=694"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Csneakers?lock=6900",
+    "reviews": [
+      {
+        "id": "rv-69-1",
+        "name": "Vikram",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 13,
+          "month": 2,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 27,
+      "height_cm": 37,
+      "length_cm": 3
+    }
+  },
+  {
+    "id": 70,
+    "name": "Urban Tshirt",
+    "price": 4234,
+    "category": "tshirt",
+    "section": "mens",
+    "trending": false,
+    "quantity": 39,
+    "rating": 3.3,
+    "description": "A urban tshirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=701",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=702",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=703",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=704"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Ctshirt?lock=7000",
+    "reviews": [
+      {
+        "id": "rv-70-1",
+        "name": "Neha",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 3.3,
+        "dateOfPurchase": {
+          "day": 18,
+          "month": 7,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 3968,
+    "dimensions": {
+      "width_cm": 64,
+      "height_cm": 89,
+      "length_cm": 27
+    }
+  },
+  {
+    "id": 71,
+    "name": "Sport Belt",
+    "price": 3597,
+    "category": "belt",
+    "section": "mens",
+    "trending": false,
+    "quantity": 177,
+    "rating": 3.8,
+    "description": "A sport belt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cbelt?lock=711",
+      "https://loremflickr.com/800/800/men%2Cbelt?lock=712",
+      "https://loremflickr.com/800/800/men%2Cbelt?lock=713",
+      "https://loremflickr.com/800/800/men%2Cbelt?lock=714"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cbelt?lock=7100",
+    "reviews": [
+      {
+        "id": "rv-71-1",
+        "name": "Tara",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 3.8,
+        "dateOfPurchase": {
+          "day": 21,
+          "month": 1,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 2851,
+    "dimensions": {
+      "width_cm": 48,
+      "height_cm": 76,
+      "length_cm": 16
+    }
+  },
+  {
+    "id": 72,
+    "name": "Playful Hoodie",
+    "price": 3208,
+    "category": "kids_hoodie",
+    "section": "kids",
+    "trending": true,
+    "quantity": 149,
+    "rating": 4.0,
+    "description": "A playful hoodie made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Choodie?lock=721",
+      "https://loremflickr.com/800/800/kids%2Choodie?lock=722",
+      "https://loremflickr.com/800/800/kids%2Choodie?lock=723",
+      "https://loremflickr.com/800/800/kids%2Choodie?lock=724"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Choodie?lock=7200",
+    "reviews": [
+      {
+        "id": "rv-72-1",
+        "name": "Asha",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 3.8,
+        "dateOfPurchase": {
+          "day": 21,
+          "month": 10,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-72-2",
+        "name": "Riya",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 3.2,
+        "dateOfPurchase": {
+          "day": 13,
+          "month": 11,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-72-3",
+        "name": "Vikram",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 4.9,
+        "dateOfPurchase": {
+          "day": 31,
+          "month": 5,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 35,
+      "height_cm": 36,
+      "length_cm": 51
+    }
+  },
+  {
+    "id": 73,
+    "name": "Floral Boots",
+    "price": 761,
+    "category": "boots",
+    "section": "womens",
+    "trending": true,
+    "quantity": 151,
+    "rating": 4.6,
+    "description": "A floral boots made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cboots?lock=731",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=732",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=733",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=734"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cboots?lock=7300",
+    "reviews": [
+      {
+        "id": "rv-73-1",
+        "name": "Rahul",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 4.6,
+        "dateOfPurchase": {
+          "day": 4,
+          "month": 12,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": 560,
+    "dimensions": {
+      "width_cm": 77,
+      "height_cm": 96,
+      "length_cm": 1
+    }
+  },
+  {
+    "id": 74,
+    "name": "Mini Jacket",
+    "price": 1263,
+    "category": "kids_jacket",
+    "section": "kids",
+    "trending": false,
+    "quantity": 148,
+    "rating": 4.0,
+    "description": "A mini jacket made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=741",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=742",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=743",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=744"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cjacket?lock=7400",
+    "reviews": [
+      {
+        "id": "rv-74-1",
+        "name": "Ishaan",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 6,
+          "month": 5,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-74-2",
+        "name": "Ananya",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 3.7,
+        "dateOfPurchase": {
+          "day": 9,
+          "month": 12,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 21,
+      "height_cm": 42,
+      "length_cm": 17
+    }
+  },
+  {
+    "id": 75,
+    "name": "Floral Dress",
+    "price": 3647,
+    "category": "dress",
+    "section": "womens",
+    "trending": true,
+    "quantity": 144,
+    "rating": 4.0,
+    "description": "A floral dress made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cdress?lock=751",
+      "https://loremflickr.com/800/800/women%2Cdress?lock=752",
+      "https://loremflickr.com/800/800/women%2Cdress?lock=753",
+      "https://loremflickr.com/800/800/women%2Cdress?lock=754"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cdress?lock=7500",
+    "reviews": [
+      {
+        "id": "rv-75-1",
+        "name": "Nikhil",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.0,
+        "dateOfPurchase": {
+          "day": 15,
+          "month": 4,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 26,
+      "height_cm": 77,
+      "length_cm": 33
+    }
+  },
+  {
+    "id": 76,
+    "name": "Tiny Shorts",
+    "price": 554,
+    "category": "kids_shorts",
+    "section": "kids",
+    "trending": false,
+    "quantity": 196,
+    "rating": 4.2,
+    "description": "A tiny shorts made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=761",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=762",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=763",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=764"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cshorts?lock=7600",
+    "reviews": [
+      {
+        "id": "rv-76-1",
+        "name": "Dev",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 3.9,
+        "dateOfPurchase": {
+          "day": 11,
+          "month": 5,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-76-2",
+        "name": "Vihaan",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 4.7,
+        "dateOfPurchase": {
+          "day": 20,
+          "month": 6,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-76-3",
+        "name": "Sneha",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.0,
+        "dateOfPurchase": {
+          "day": 8,
+          "month": 7,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 398,
+    "dimensions": {
+      "width_cm": 58,
+      "height_cm": 38,
+      "length_cm": 5
+    }
+  },
+  {
+    "id": 77,
+    "name": "Urban Shorts",
+    "price": 4994,
+    "category": "shorts",
+    "section": "mens",
+    "trending": false,
+    "quantity": 150,
+    "rating": 4.6,
+    "description": "A urban shorts made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=771",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=772",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=773",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=774"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cshorts?lock=7700",
+    "reviews": [
+      {
+        "id": "rv-77-1",
+        "name": "Priya",
+        "descriptionOfProduct": "Super soft fabric, highly recommend.",
+        "rating": 5.0,
+        "dateOfPurchase": {
+          "day": 5,
+          "month": 10,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-77-2",
+        "name": "Rohit",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 4.0,
+        "dateOfPurchase": {
+          "day": 24,
+          "month": 6,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-77-3",
+        "name": "Riya",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.7,
+        "dateOfPurchase": {
+          "day": 26,
+          "month": 10,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 33,
+      "height_cm": 75,
+      "length_cm": 29
+    }
+  },
+  {
+    "id": 78,
+    "name": "Comfy Shorts",
+    "price": 2975,
+    "category": "kids_shorts",
+    "section": "kids",
+    "trending": false,
+    "quantity": 126,
+    "rating": 3.7,
+    "description": "A comfy shorts made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=781",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=782",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=783",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=784"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cshorts?lock=7800",
+    "reviews": [
+      {
+        "id": "rv-78-1",
+        "name": "Maya",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 3.6,
+        "dateOfPurchase": {
+          "day": 24,
+          "month": 2,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-78-2",
+        "name": "Sneha",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 3.7,
+        "dateOfPurchase": {
+          "day": 13,
+          "month": 9,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 50,
+      "height_cm": 28,
+      "length_cm": 6
+    }
+  },
+  {
+    "id": 79,
+    "name": "Playful Dress",
+    "price": 3736,
+    "category": "kids_dress",
+    "section": "kids",
+    "trending": false,
+    "quantity": 34,
+    "rating": 4.4,
+    "description": "A playful dress made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=791",
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=792",
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=793",
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=794"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cdress?lock=7900",
+    "reviews": [
+      {
+        "id": "rv-79-1",
+        "name": "Nikhil",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 4.6,
+        "dateOfPurchase": {
+          "day": 31,
+          "month": 10,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-79-2",
+        "name": "Vihaan",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 4.9,
+        "dateOfPurchase": {
+          "day": 6,
+          "month": 11,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-79-3",
+        "name": "Priya",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 3.8,
+        "dateOfPurchase": {
+          "day": 17,
+          "month": 6,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 66,
+      "height_cm": 26,
+      "length_cm": 19
+    }
+  },
+  {
+    "id": 80,
+    "name": "Cute Hat",
+    "price": 3079,
+    "category": "kids_hat",
+    "section": "kids",
+    "trending": false,
+    "quantity": 36,
+    "rating": 3.8,
+    "description": "A cute hat made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Chat?lock=801",
+      "https://loremflickr.com/800/800/kids%2Chat?lock=802",
+      "https://loremflickr.com/800/800/kids%2Chat?lock=803",
+      "https://loremflickr.com/800/800/kids%2Chat?lock=804"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Chat?lock=8000",
+    "reviews": [
+      {
+        "id": "rv-80-1",
+        "name": "Dev",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 3.3,
+        "dateOfPurchase": {
+          "day": 16,
+          "month": 8,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-80-2",
+        "name": "Neha",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 3.7,
+        "dateOfPurchase": {
+          "day": 31,
+          "month": 10,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-80-3",
+        "name": "Asha",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.5,
+        "dateOfPurchase": {
+          "day": 18,
+          "month": 11,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 2485,
+    "dimensions": {
+      "width_cm": 55,
+      "height_cm": 118,
+      "length_cm": 53
+    }
+  },
+  {
+    "id": 81,
+    "name": "Modern Boots",
+    "price": 4759,
+    "category": "boots",
+    "section": "womens",
+    "trending": false,
+    "quantity": 16,
+    "rating": 4.2,
+    "description": "A modern boots made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cboots?lock=811",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=812",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=813",
+      "https://loremflickr.com/800/800/women%2Cboots?lock=814"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cboots?lock=8100",
+    "reviews": [
+      {
+        "id": "rv-81-1",
+        "name": "Sneha",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 3.1,
+        "dateOfPurchase": {
+          "day": 14,
+          "month": 1,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-81-2",
+        "name": "Aditi",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 4.8,
+        "dateOfPurchase": {
+          "day": 4,
+          "month": 4,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-81-3",
+        "name": "Ayaan",
+        "descriptionOfProduct": "Very comfortable and stylish.",
+        "rating": 4.7,
+        "dateOfPurchase": {
+          "day": 10,
+          "month": 11,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 24,
+      "height_cm": 38,
+      "length_cm": 48
+    }
+  },
+  {
+    "id": 82,
+    "name": "Classic Tshirt",
+    "price": 4544,
+    "category": "tshirt",
+    "section": "mens",
+    "trending": false,
+    "quantity": 65,
+    "rating": 4.2,
+    "description": "A classic tshirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=821",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=822",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=823",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=824"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Ctshirt?lock=8200",
+    "reviews": [
+      {
+        "id": "rv-82-1",
+        "name": "Maya",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 3.7,
+        "dateOfPurchase": {
+          "day": 23,
+          "month": 4,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-82-2",
+        "name": "Rohit",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 4.6,
+        "dateOfPurchase": {
+          "day": 12,
+          "month": 11,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 76,
+      "height_cm": 26,
+      "length_cm": 10
+    }
+  },
+  {
+    "id": 83,
+    "name": "Soft Shorts",
+    "price": 606,
+    "category": "shorts",
+    "section": "mens",
+    "trending": true,
+    "quantity": 182,
+    "rating": 4.3,
+    "description": "A soft shorts made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=831",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=832",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=833",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=834"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cshorts?lock=8300",
+    "reviews": [
+      {
+        "id": "rv-83-1",
+        "name": "Kavya",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 20,
+          "month": 8,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 46,
+      "height_cm": 54,
+      "length_cm": 14
+    }
+  },
+  {
+    "id": 84,
+    "name": "Playful Sneakers",
+    "price": 3026,
+    "category": "kids_sneakers",
+    "section": "kids",
+    "trending": true,
+    "quantity": 120,
+    "rating": 4.0,
+    "description": "A playful sneakers made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=841",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=842",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=843",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=844"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Csneakers?lock=8400",
+    "reviews": [
+      {
+        "id": "rv-84-1",
+        "name": "Rohit",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 4.0,
+        "dateOfPurchase": {
+          "day": 19,
+          "month": 2,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 2417,
+    "dimensions": {
+      "width_cm": 58,
+      "height_cm": 27,
+      "length_cm": 1
+    }
+  },
+  {
+    "id": 85,
+    "name": "Cute Shorts",
+    "price": 1929,
+    "category": "kids_shorts",
+    "section": "kids",
+    "trending": false,
+    "quantity": 45,
+    "rating": 3.3,
+    "description": "A cute shorts made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=851",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=852",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=853",
+      "https://loremflickr.com/800/800/kids%2Cshorts?lock=854"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cshorts?lock=8500",
+    "reviews": [
+      {
+        "id": "rv-85-1",
+        "name": "Rohit",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.2,
+        "dateOfPurchase": {
+          "day": 1,
+          "month": 9,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-85-2",
+        "name": "Nikhil",
+        "descriptionOfProduct": "Super soft fabric, highly recommend.",
+        "rating": 3.4,
+        "dateOfPurchase": {
+          "day": 4,
+          "month": 5,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 34,
+      "height_cm": 84,
+      "length_cm": 36
+    }
+  },
+  {
+    "id": 86,
+    "name": "Classic Shirt",
+    "price": 3451,
+    "category": "shirt",
+    "section": "mens",
+    "trending": false,
+    "quantity": 199,
+    "rating": 3.9,
+    "description": "A classic shirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=861",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=862",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=863",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=864"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cshirt?lock=8600",
+    "reviews": [
+      {
+        "id": "rv-86-1",
+        "name": "Maya",
+        "descriptionOfProduct": "Great quality, fits well.",
+        "rating": 3.9,
+        "dateOfPurchase": {
+          "day": 28,
+          "month": 6,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 56,
+      "height_cm": 74,
+      "length_cm": 37
+    }
+  },
+  {
+    "id": 87,
+    "name": "Boho Jumpsuit",
+    "price": 2570,
+    "category": "jumpsuit",
+    "section": "womens",
+    "trending": false,
+    "quantity": 39,
+    "rating": 3.2,
+    "description": "A boho jumpsuit made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cjumpsuit?lock=871",
+      "https://loremflickr.com/800/800/women%2Cjumpsuit?lock=872",
+      "https://loremflickr.com/800/800/women%2Cjumpsuit?lock=873",
+      "https://loremflickr.com/800/800/women%2Cjumpsuit?lock=874"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cjumpsuit?lock=8700",
+    "reviews": [
+      {
+        "id": "rv-87-1",
+        "name": "Ayaan",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.3,
+        "dateOfPurchase": {
+          "day": 25,
+          "month": 7,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-87-2",
+        "name": "Aditi",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.2,
+        "dateOfPurchase": {
+          "day": 27,
+          "month": 7,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": 2177,
+    "dimensions": {
+      "width_cm": 53,
+      "height_cm": 30,
+      "length_cm": 26
+    }
+  },
+  {
+    "id": 88,
+    "name": "Cute Jacket",
+    "price": 2014,
+    "category": "kids_jacket",
+    "section": "kids",
+    "trending": false,
+    "quantity": 95,
+    "rating": 4.3,
+    "description": "A cute jacket made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=881",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=882",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=883",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=884"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cjacket?lock=8800",
+    "reviews": [
+      {
+        "id": "rv-88-1",
+        "name": "Arjun",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 5,
+          "month": 10,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 77,
+      "height_cm": 119,
+      "length_cm": 23
+    }
+  },
+  {
+    "id": 89,
+    "name": "Sport Shirt",
+    "price": 2134,
+    "category": "shirt",
+    "section": "mens",
+    "trending": false,
+    "quantity": 36,
+    "rating": 3.3,
+    "description": "A sport shirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=891",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=892",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=893",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=894"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cshirt?lock=8900",
+    "reviews": [
+      {
+        "id": "rv-89-1",
+        "name": "Kavya",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 3.3,
+        "dateOfPurchase": {
+          "day": 13,
+          "month": 9,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 61,
+      "height_cm": 29,
+      "length_cm": 12
+    }
+  },
+  {
+    "id": 90,
+    "name": "Comfy Pants",
+    "price": 4817,
+    "category": "kids_pants",
+    "section": "kids",
+    "trending": false,
+    "quantity": 158,
+    "rating": 3.8,
+    "description": "A comfy pants made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cpants?lock=901",
+      "https://loremflickr.com/800/800/kids%2Cpants?lock=902",
+      "https://loremflickr.com/800/800/kids%2Cpants?lock=903",
+      "https://loremflickr.com/800/800/kids%2Cpants?lock=904"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cpants?lock=9000",
+    "reviews": [
+      {
+        "id": "rv-90-1",
+        "name": "Sneha",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 4.3,
+        "dateOfPurchase": {
+          "day": 6,
+          "month": 3,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-90-2",
+        "name": "Vikram",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.3,
+        "dateOfPurchase": {
+          "day": 18,
+          "month": 6,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 60,
+      "height_cm": 58,
+      "length_cm": 51
+    }
+  },
+  {
+    "id": 91,
+    "name": "Tiny Jacket",
+    "price": 659,
+    "category": "kids_jacket",
+    "section": "kids",
+    "trending": false,
+    "quantity": 100,
+    "rating": 4.3,
+    "description": "A tiny jacket made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=911",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=912",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=913",
+      "https://loremflickr.com/800/800/kids%2Cjacket?lock=914"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cjacket?lock=9100",
+    "reviews": [
+      {
+        "id": "rv-91-1",
+        "name": "Arjun",
+        "descriptionOfProduct": "Worth the price.",
+        "rating": 3.9,
+        "dateOfPurchase": {
+          "day": 18,
+          "month": 5,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-91-2",
+        "name": "Vihaan",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 4.7,
+        "dateOfPurchase": {
+          "day": 27,
+          "month": 6,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-91-3",
+        "name": "Vikram",
+        "descriptionOfProduct": "Colour faded after first wash.",
+        "rating": 4.2,
+        "dateOfPurchase": {
+          "day": 11,
+          "month": 9,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 556,
+    "dimensions": {
+      "width_cm": 70,
+      "height_cm": 114,
+      "length_cm": 58
+    }
+  },
+  {
+    "id": 92,
+    "name": "Vintage Tshirt",
+    "price": 4882,
+    "category": "tshirt",
+    "section": "mens",
+    "trending": true,
+    "quantity": 176,
+    "rating": 4.0,
+    "description": "A vintage tshirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=921",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=922",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=923",
+      "https://loremflickr.com/800/800/men%2Ctshirt?lock=924"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Ctshirt?lock=9200",
+    "reviews": [
+      {
+        "id": "rv-92-1",
+        "name": "Priya",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 4.0,
+        "dateOfPurchase": {
+          "day": 11,
+          "month": 9,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 48,
+      "height_cm": 33,
+      "length_cm": 52
+    }
+  },
+  {
+    "id": 93,
+    "name": "Classic Shirt",
+    "price": 4332,
+    "category": "shirt",
+    "section": "mens",
+    "trending": false,
+    "quantity": 175,
+    "rating": 4.4,
+    "description": "A classic shirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=931",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=932",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=933",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=934"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cshirt?lock=9300",
+    "reviews": [
+      {
+        "id": "rv-93-1",
+        "name": "Vihaan",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 4.4,
+        "dateOfPurchase": {
+          "day": 3,
+          "month": 7,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 59,
+      "height_cm": 40,
+      "length_cm": 24
+    }
+  },
+  {
+    "id": 94,
+    "name": "Urban Shirt",
+    "price": 3372,
+    "category": "shirt",
+    "section": "mens",
+    "trending": false,
+    "quantity": 114,
+    "rating": 3.2,
+    "description": "A urban shirt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=941",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=942",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=943",
+      "https://loremflickr.com/800/800/men%2Cshirt?lock=944"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cshirt?lock=9400",
+    "reviews": [
+      {
+        "id": "rv-94-1",
+        "name": "Sneha",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 3.1,
+        "dateOfPurchase": {
+          "day": 18,
+          "month": 3,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-94-2",
+        "name": "Arjun",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.2,
+        "dateOfPurchase": {
+          "day": 10,
+          "month": 5,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 2970,
+    "dimensions": {
+      "width_cm": 62,
+      "height_cm": 97,
+      "length_cm": 56
+    }
+  },
+  {
+    "id": 95,
+    "name": "Urban Shorts",
+    "price": 866,
+    "category": "shorts",
+    "section": "mens",
+    "trending": false,
+    "quantity": 159,
+    "rating": 3.9,
+    "description": "A urban shorts made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=951",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=952",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=953",
+      "https://loremflickr.com/800/800/men%2Cshorts?lock=954"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cshorts?lock=9500",
+    "reviews": [
+      {
+        "id": "rv-95-1",
+        "name": "Ananya",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.6,
+        "dateOfPurchase": {
+          "day": 16,
+          "month": 5,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-95-2",
+        "name": "Ananya",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 4.4,
+        "dateOfPurchase": {
+          "day": 5,
+          "month": 7,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-95-3",
+        "name": "Rohit",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 3.8,
+        "dateOfPurchase": {
+          "day": 12,
+          "month": 3,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 62,
+      "height_cm": 109,
+      "length_cm": 54
+    }
+  },
+  {
+    "id": 96,
+    "name": "Elegant Leggings",
+    "price": 3667,
+    "category": "leggings",
+    "section": "womens",
+    "trending": true,
+    "quantity": 140,
+    "rating": 3.5,
+    "description": "A elegant leggings made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=961",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=962",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=963",
+      "https://loremflickr.com/800/800/women%2Cleggings?lock=964"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/women%2Cleggings?lock=9600",
+    "reviews": [
+      {
+        "id": "rv-96-1",
+        "name": "Ayaan",
+        "descriptionOfProduct": "Sizing runs small, order one size up.",
+        "rating": 3.6,
+        "dateOfPurchase": {
+          "day": 15,
+          "month": 11,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-96-2",
+        "name": "Priya",
+        "descriptionOfProduct": "Stitching came loose after a week.",
+        "rating": 3.4,
+        "dateOfPurchase": {
+          "day": 28,
+          "month": 8,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": 2838,
+    "dimensions": {
+      "width_cm": 70,
+      "height_cm": 32,
+      "length_cm": 33
+    }
+  },
+  {
+    "id": 97,
+    "name": "Tiny Sneakers",
+    "price": 508,
+    "category": "kids_sneakers",
+    "section": "kids",
+    "trending": false,
+    "quantity": 179,
+    "rating": 3.3,
+    "description": "A tiny sneakers made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=971",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=972",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=973",
+      "https://loremflickr.com/800/800/kids%2Csneakers?lock=974"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Csneakers?lock=9700",
+    "reviews": [
+      {
+        "id": "rv-97-1",
+        "name": "Pooja",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 3.3,
+        "dateOfPurchase": {
+          "day": 30,
+          "month": 4,
+          "year": 2025
+        }
+      },
+      {
+        "id": "rv-97-2",
+        "name": "Ananya",
+        "descriptionOfProduct": "Very comfortable and stylish.",
+        "rating": 3.4,
+        "dateOfPurchase": {
+          "day": 26,
+          "month": 9,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 22,
+      "height_cm": 72,
+      "length_cm": 24
+    }
+  },
+  {
+    "id": 98,
+    "name": "Vintage Jeans",
+    "price": 2533,
+    "category": "jeans",
+    "section": "mens",
+    "trending": false,
+    "quantity": 124,
+    "rating": 3.6,
+    "description": "A vintage jeans made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=981",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=982",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=983",
+      "https://loremflickr.com/800/800/men%2Cjeans?lock=984"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cjeans?lock=9800",
+    "reviews": [
+      {
+        "id": "rv-98-1",
+        "name": "Kriti",
+        "descriptionOfProduct": "Material isn't as described.",
+        "rating": 3.6,
+        "dateOfPurchase": {
+          "day": 3,
+          "month": 8,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": null,
+    "dimensions": {
+      "width_cm": 32,
+      "height_cm": 67,
+      "length_cm": 44
+    }
+  },
+  {
+    "id": 99,
+    "name": "Vintage Belt",
+    "price": 3981,
+    "category": "belt",
+    "section": "mens",
+    "trending": false,
+    "quantity": 82,
+    "rating": 3.5,
+    "description": "A vintage belt made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/men%2Cbelt?lock=991",
+      "https://loremflickr.com/800/800/men%2Cbelt?lock=992",
+      "https://loremflickr.com/800/800/men%2Cbelt?lock=993",
+      "https://loremflickr.com/800/800/men%2Cbelt?lock=994"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/men%2Cbelt?lock=9900",
+    "reviews": [
+      {
+        "id": "rv-99-1",
+        "name": "Dev",
+        "descriptionOfProduct": "Perfect for everyday wear.",
+        "rating": 3.8,
+        "dateOfPurchase": {
+          "day": 22,
+          "month": 9,
+          "year": 2024
+        }
+      },
+      {
+        "id": "rv-99-2",
+        "name": "Sakshi",
+        "descriptionOfProduct": "Good value for money.",
+        "rating": 3.3,
+        "dateOfPurchase": {
+          "day": 22,
+          "month": 12,
+          "year": 2024
+        }
+      }
+    ],
+    "discountedPrice": 3265,
+    "dimensions": {
+      "width_cm": 43,
+      "height_cm": 90,
+      "length_cm": 60
+    }
+  },
+  {
+    "id": 100,
+    "name": "Tiny Dress",
+    "price": 1220,
+    "category": "kids_dress",
+    "section": "kids",
+    "trending": false,
+    "quantity": 82,
+    "rating": 3.5,
+    "description": "A tiny dress made with attention to detail. Comfortable & durable.",
+    "image": [
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=1001",
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=1002",
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=1003",
+      "https://loremflickr.com/800/800/kids%2Cdress?lock=1004"
+    ],
+    "thumbnail": "https://loremflickr.com/300/300/kids%2Cdress?lock=10000",
+    "reviews": [
+      {
+        "id": "rv-100-1",
+        "name": "Pooja",
+        "descriptionOfProduct": "Very comfortable and stylish.",
+        "rating": 3.5,
+        "dateOfPurchase": {
+          "day": 17,
+          "month": 9,
+          "year": 2025
+        }
+      }
+    ],
+    "discountedPrice": 987,
+    "dimensions": {
+      "width_cm": 80,
+      "height_cm": 48,
+      "length_cm": 53
+    }
+  }
+  ]
+}
