@@ -10,22 +10,29 @@ import {
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 const Cart = () => {
+  const token = localStorage.getItem("token");
   const Navigate = useNavigate();
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.cartData);
 
-  const user = JSON.parse(localStorage.getItem("user"))._id;
   async function HandleCartDecrease(obj) {
     dispatch(
       decreaseQuantity({
         id: obj.product._id,
       }),
     );
-    await axios.patch("http://localhost:8000/cart", {
-      user,
-      product: obj.product._id,
-      quantityIncrease: false,
-    });
+    await axios.patch(
+      "http://localhost:8000/cart",
+      {
+        product: obj.product._id,
+        quantityIncrease: false,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      },
+    );
   }
   async function HandleCartIncrease(obj) {
     dispatch(
@@ -33,11 +40,18 @@ const Cart = () => {
         id: obj.product._id,
       }),
     );
-    await axios.patch("http://localhost:8000/cart", {
-      user,
-      product: obj.product._id,
-      quantityIncrease: true,
-    });
+    await axios.patch(
+      "http://localhost:8000/cart",
+      {
+        product: obj.product._id,
+        quantityIncrease: true,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      },
+    );
   }
   async function HandleDeleteCartItem(obj) {
     dispatch(
@@ -47,8 +61,10 @@ const Cart = () => {
     );
 
     await axios.delete("http://localhost:8000/cart", {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
       data: {
-        user,
         product: obj.product._id,
       },
     });
@@ -58,78 +74,109 @@ const Cart = () => {
     0,
   );
   return (
-    <div>
-      <div className="w-full h-[80%] flex items-center flex-col overflow-auto absolute top-20 mt-2 mb-3 left-0 right-0">
-        <ul className="w-[45%] flex flex-wrap gap-4 justify-center items-center">
-          {cart.data.length == 0 && (
-            <div className="absolute z-10">
-              <h1 className="mt-20">no items in cart</h1>
-            </div>
-          )}
-          {!cart.loading &&
-            cart.data.map((obj) => (
-              <li
-                key={obj.id || obj.product._id}
-                className="w-[90%] h-50 bg-gray-100 rounded-2xl border-2 border-transparent hover:border-black"
-              >
-                <div className="flex justify-center items-center w-full h-full gap-4">
-                  <div className="flex flex-col justify-center items-center m-1 gap-2">
-                    <img
-                      src={`http://localhost:8000/images/${obj.product.image}`}
-                      alt="no"
-                      className="h-30 w-30 rounded-2xl "
-                    />
-                    <div className="flex gap-2 justify-center items-center bg-white rounded-2xl px-2">
+    <div className="max-w-3xl mx-auto px-4 pt-8 pb-32">
+      {/* PAGE TITLE */}
+      <div className="mb-8 text-center">
+        <h1 className="text-2xl font-semibold">Shopping Cart</h1>
+        <p className="text-gray-500 text-sm mt-1">
+          Review items before checkout
+        </p>
+      </div>
+
+      {/* EMPTY CART */}
+      {cart.data.length === 0 && (
+        <p className="text-center mt-24 text-gray-500">Your cart is empty</p>
+      )}
+
+      {/* CART ITEMS */}
+      <ul className="space-y-6">
+        {!cart.loading &&
+          cart.data.map((obj) => (
+            <li
+              key={obj.id || obj.product._id}
+              className="bg-white border rounded-2xl px-5 py-5 hover:shadow-sm transition"
+            >
+              <div className="flex gap-6">
+                {/* IMAGE */}
+                <img
+                  src={`http://localhost:8000/images/${obj.product.image}`}
+                  alt={obj.product.name}
+                  className="h-28 w-28 rounded-xl object-cover"
+                />
+
+                {/* DETAILS */}
+                <div className="flex-1 flex flex-col justify-between">
+                  {/* TOP */}
+                  <div>
+                    <h2 className="text-base font-medium">
+                      {obj.product.name}
+                    </h2>
+
+                    <p className="text-sm w-50 text-gray-500 mt-2 overflow-hidden line-clamp-2 wrap-break-word">
+                      {obj.product.description}
+                    </p>
+                  </div>
+
+                  {/* BOTTOM */}
+                  <div className="flex items-center justify-between mt-6">
+                    {/* QUANTITY */}
+                    <div className="flex items-center gap-3 border rounded-lg px-3 py-1.5">
                       <button
                         onClick={() => HandleCartDecrease(obj)}
-                        className={
-                          obj.quantity == 1
-                            ? "cursor-not-allowed w-8 h-7 rounded-[5px] invisible"
-                            : "cursor-pointer w-8 h-7 rounded-[5px]"
-                        }
-                        disabled={obj.quantity == 1}
+                        disabled={obj.quantity === 1}
+                        className={`text-lg px-2 ${
+                          obj.quantity === 1
+                            ? "opacity-40 cursor-not-allowed"
+                            : "hover:text-black cursor-pointer"
+                        }`}
                       >
-                        -
+                        −
                       </button>
-                      <p>{obj["quantity"]}</p>
+
+                      <span className="font-medium">{obj.quantity}</span>
+
                       <button
                         onClick={() => HandleCartIncrease(obj)}
-                        className="w-8 h-7 cursor-pointer rounded-[5px]"
+                        className="text-lg px-2 cursor-pointer hover:text-black"
                       >
                         +
                       </button>
                     </div>
-                  </div>
 
-                  <div className="w-[75%] h-50 flex flex-col justify-between items-start py-5">
-                    <p className="text-2xl">{obj.product.name}</p>
-                    <div className="w-[70%]">
-                      <p className="whitespace-normal wrap-break-word line-clamp-2">
-                        {obj.product.description}
+                    {/* PRICE + DELETE */}
+                    <div className="flex items-center gap-6">
+                      <p className="text-lg font-semibold">
+                        ₹{obj.product.price}
                       </p>
-                    </div>
-                    <p className="text-xl">Price: {obj.product.price}/-</p>
-                    <div className="flex gap-10 items-center ">
+
                       <FontAwesomeIcon
                         icon={faTrashCan}
-                        className="text-xl cursor-pointer"
+                        className="text-gray-400 hover:text-black cursor-pointer text-lg"
                         onClick={() => HandleDeleteCartItem(obj)}
                       />
                     </div>
                   </div>
                 </div>
-              </li>
-            ))}
-        </ul>
-      </div>
+              </div>
+            </li>
+          ))}
+      </ul>
+
+      {/* CHECKOUT BAR */}
       {cart.data.length >= 1 && (
-        <div className="absolute bottom-0 flex justify-center flex-col items-center w-full h-20">
-          <button
-            className="bg-yellow-500 text-white text-xl w-[40%] font-bold py-2 rounded-2xl cursor-pointer"
-            onClick={() => Navigate("/order")}
-          >
-            Proceed to Buy
-          </button>
+        <div className="fixed bottom-0 left-0 right-0 bg-white border-t">
+          <div className="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between">
+            <p className="text-lg font-medium">
+              Total: <span className="font-semibold">₹{total}</span>
+            </p>
+
+            <button
+              onClick={() => Navigate("/order")}
+              className="bg-black text-white cursor-pointer px-8 py-3 rounded-xl text-sm hover:bg-gray-800 transition"
+            >
+              Proceed to Buy
+            </button>
+          </div>
         </div>
       )}
     </div>

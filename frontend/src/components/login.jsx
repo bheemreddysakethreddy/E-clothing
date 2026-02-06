@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -12,164 +12,173 @@ const Login = () => {
     confirmPassword: "",
   });
   const [errorMessage, setErrorMessage] = useState("");
-  const Navigate = useNavigate();
-  let dispatch = useDispatch();
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    setDetails({ email: "", password: "", confirmPassword: "" });
+  }, [loginStatus]);
 
   async function FetchUser(e) {
     e.preventDefault();
-    /** 
-    if(!email.endsWith("@gmail.com")){
-        setErrorMessage("email not valid")
-      }
-      if(password.length<8){
-          setErrorMessage("Password too short")
-        }
-    */
-
     if (loginStatus) {
       try {
         setErrorMessage("");
-        let res = await axios.post(
-          "http://localhost:8000/login",
-          {
-            email: details.email,
-            password: details.password,
-          },
-          {
-            headers: {
-              "Content-Type": "application/json",
-            },
-          },
-        );
-        localStorage.setItem("user", JSON.stringify(res.data.user));
-        console.log(res.data.token);
-        console.log(res.data.user);
+
+        const res = await axios.post("http://localhost:8000/login", {
+          email: details.email,
+          password: details.password,
+        });
+
+        const { token, email, id, role } = res.data;
+
+        localStorage.setItem("user", JSON.stringify({ id, email, role }));
+        localStorage.setItem("token", token);
+
         dispatch(login());
-        Navigate("/");
+        navigate("/");
       } catch (e) {
-        setErrorMessage(e.response.data.message);
-        console.log(e.response.data.message);
+        setErrorMessage(e.response?.data?.message || "Login failed");
       }
     } else {
       try {
         setErrorMessage("");
-        let res = await axios.post(
-          "http://localhost:8000/signin",
-          {
-            email: details.email,
-            password: details.password,
-            confirmPassword: details.confirmPassword,
-          },
-          {
-            headers: {
-              "Content-Type": "application/json",
-            },
-          },
-        );
-        console.log(res.data.message);
+        if (details.password !== details.confirmPassword) {
+          setErrorMessage("passwords not matching");
+          return;
+        }
+        const res = await axios.post("http://localhost:8000/signin", {
+          email: details.email,
+          password: details.password,
+          confirmPassword: details.confirmPassword,
+        });
+
         setErrorMessage(res.data.message);
       } catch (e) {
-        setErrorMessage(e.response.data.message);
-        console.log(e.response.data.message);
+        setErrorMessage(e.response?.data?.message || "Signup failed");
       }
     }
   }
 
   function HandleFormDetails(e) {
-    let { name, value } = e.target;
-
-    setDetails((prev) => {
-      return { ...prev, [name]: value };
-    });
-    console.log(details);
+    const { name, value } = e.target;
+    setDetails((prev) => ({ ...prev, [name]: value }));
   }
 
   return (
-    <>
-      <div className="flex justify-center items-center w-full h-screen bg-neutral-900 text-amber-50">
-        <form
-          onSubmit={FetchUser}
-          className="w-[300px] p-2 md:w-[400px] h-130 flex flex-col justify-center items-center border rounded-2xl md:p-10 bg-neutral-800"
-        >
-          <label htmlFor="email" className="w-[80%]">
-            {" "}
-            email: <br />
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
+      <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
+        {/* Heading */}
+        <div className="text-center mb-8">
+          <h2 className="text-2xl font-semibold">
+            {loginStatus ? "Welcome Back" : "Create Account"}
+          </h2>
+          <p className="text-gray-500 text-sm mt-1">
+            {loginStatus
+              ? "Login to continue shopping"
+              : "Sign up to get started"}
+          </p>
+        </div>
+
+        {/* Form */}
+        <form onSubmit={FetchUser} className="space-y-5">
+          <div>
+            <label className="block text-sm font-medium mb-1">Email</label>
             <input
-              type="text"
-              id="email"
+              type="email"
               name="email"
               value={details.email}
               onChange={HandleFormDetails}
-              placeholder="enter Email"
-              className="border w-full py-2 px-2 rounded outline-none border-amber-50  "
+              placeholder="you@example.com"
+              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-gray-300"
+              required
             />
-          </label>
-          <br />
-          <label htmlFor="password" className="w-[80%]">
-            {" "}
-            Password: <br />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">Password</label>
             <input
-              type="text"
-              id="password"
+              type="password"
               name="password"
-              placeholder="enter Password"
+              value={details.password}
               onChange={HandleFormDetails}
-              className="border w-full py-2 px-2 rounded outline-none border-amber-50  "
+              placeholder="••••••••"
+              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-gray-300"
+              required
             />
-          </label>
-          <br />
+          </div>
 
           {!loginStatus && (
-            <label htmlFor="confirmPassword" className="w-[80%]">
-              confirm Password: <br />
+            <div>
+              <label className="block text-sm font-medium mb-1">
+                Confirm Password
+              </label>
               <input
-                type="text"
-                id="confirmPassword"
+                type="password"
                 name="confirmPassword"
+                value={details.confirmPassword}
                 onChange={HandleFormDetails}
-                placeholder="re-enter Password"
-                className="border w-full py-2 px-2 rounded outline-none border-amber-50  "
+                placeholder="••••••••"
+                className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-gray-300"
+                required
               />
-            </label>
+            </div>
           )}
-          {errorMessage && <p>{errorMessage}</p>}
-          <div className="flex gap-5">
-            <button
-              type="submit"
-              className="h-10 w-20 bg-gray-700 rounded cursor-pointer mt-10 hover:scale-95 hover:bg-gray-800"
-            >
-              {loginStatus ? "Login" : "Sign in"}
-            </button>
-          </div>
-          <br />
-          {loginStatus && (
-            <p>
-              Don't have an account ?{" "}
+
+          {/* Error / Message */}
+          {errorMessage && (
+            <p className="text-sm text-red-500 text-center">{errorMessage}</p>
+          )}
+
+          {/* Submit */}
+          <button
+            type="submit"
+            className="w-full bg-black text-white py-2.5 rounded-lg font-medium hover:bg-gray-800 transition"
+          >
+            {loginStatus ? "Login" : "Sign Up"}
+          </button>
+        </form>
+
+        {/* Switch Auth */}
+        <div className="text-center mt-6 text-sm">
+          {loginStatus ? (
+            <>
+              Don’t have an account?{" "}
               <span
-                className="cursor-pointer text-blue-500"
-                onClick={() => (setLoginStatus(false), setErrorMessage(""))}
+                className="text-blue-600 cursor-pointer font-medium"
+                onClick={() => {
+                  setLoginStatus(false);
+                  setErrorMessage("");
+                }}
               >
                 Sign up
               </span>
-            </p>
-          )}
-          {!loginStatus && (
-            <p>
-              Already have an account ?{" "}
+            </>
+          ) : (
+            <>
+              Already have an account?{" "}
               <span
-                className="cursor-pointer text-blue-500"
-                onClick={
-                  () => (setLoginStatus(true), setErrorMessage(""))
-                  // setDetails({ email: "", password: "", confirmPassword: "" })
-                }
+                className="text-blue-600 cursor-pointer font-medium"
+                onClick={() => {
+                  setLoginStatus(true);
+                  setErrorMessage("");
+                }}
               >
                 Login
               </span>
-            </p>
+            </>
           )}
-        </form>
+        </div>
+
+        {/* Guest */}
+        <button
+          onClick={() => navigate("/")}
+          className="w-full mt-4 text-sm text-gray-500 hover:underline"
+        >
+          Continue as Guest
+        </button>
       </div>
-    </>
+    </div>
   );
 };
 

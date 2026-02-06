@@ -12,6 +12,7 @@ import { productsFetch } from "./redux/thunks/productTunk";
 import { cartProducts } from "./redux/thunks/cartTunk";
 import { store } from "./redux/store";
 import Order from "./pages/Order";
+import MainLayout from "./utils/mainLayout";
 
 async function getMensProducts() {
   await store.dispatch(
@@ -27,7 +28,14 @@ async function getWomensProducts() {
 }
 async function getCartProducts() {
   const user = JSON.parse(localStorage.getItem("user"));
-  await store.dispatch(cartProducts(`http://localhost:8000/cart/${user._id}`));
+  const token = localStorage.getItem("token");
+
+  if (!user || !token) {
+    return null;
+  }
+
+  await store.dispatch(cartProducts(`http://localhost:8000/cart/${user.id}`));
+
   return null;
 }
 async function getKidsProducts() {
@@ -45,22 +53,27 @@ async function getTrendingProducts() {
 
 const router = createBrowserRouter([
   {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/",
-    element: <Protected />,
+    element: <MainLayout />,
     children: [
-      { index: true, element: <Home /> },
-      { path: "/cart", element: <Cart />, loader: getCartProducts },
-      { path: "/kid", element: <Kid />, loader: getKidsProducts },
+      { path: "/", element: <Home /> },
       { path: "/men", element: <Men />, loader: getMensProducts },
       { path: "/women", element: <Women />, loader: getWomensProducts },
+      { path: "/kid", element: <Kid />, loader: getKidsProducts },
       { path: "/trending", element: <Trending />, loader: getTrendingProducts },
       { path: "/productdetail", element: <Productdetails /> },
-      { path: "/order", element: <Order />, loader: getCartProducts },
+
+      {
+        element: <Protected />,
+        children: [
+          { path: "/cart", element: <Cart />, loader: getCartProducts },
+          { path: "/order", element: <Order />, loader: getCartProducts },
+        ],
+      },
     ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 

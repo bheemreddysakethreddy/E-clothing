@@ -1,9 +1,10 @@
-// import useFetch from "../components/useFetch"
 import { useSelector, useDispatch } from "react-redux";
 import { addtoCart } from "../redux/cartSlice";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+
 const Kid = () => {
+  const token = localStorage.getItem("token");
   const Navigate = useNavigate();
   const dispatch = useDispatch();
   const response = useSelector((state) => state.products.fetchedData.data);
@@ -14,6 +15,10 @@ const Kid = () => {
   }
 
   async function HandlenewCartItem(obj) {
+    if (!token) {
+      Navigate("/login");
+      return;
+    }
     dispatch(
       addtoCart({
         id: obj._id,
@@ -24,52 +29,71 @@ const Kid = () => {
       }),
     );
     await axios.post("http://localhost:8000/cart", {
-      user: JSON.parse(localStorage.getItem("user"))._id,
       product: obj._id,
       quantity: 1,
     });
   }
 
   return (
-    <div>
-      <div className="absolute top-20 w-full ">
-        {response.loading && <h1 className="text-2xl">loading...</h1>}
-        {response.error && <h1>error occurred...</h1>}
-        {!response.loading && (
-          <ul className="w-full h-full flex flex-wrap gap-10 p-10 justify-center">
-            {response.data.map((obj) => (
-              <li
-                key={obj.id}
-                className=" h-110 w-100 bg-amber-50 rounded-2xl p-6 box-border hover:shadow-black"
+    <div className="max-w-7xl mx-auto px-4 pt-8 pb-16">
+      <div className="mb-10 text-center">
+        <h1 className="text-2xl md:text-3xl font-semibold">
+          Kids's Collection
+        </h1>
+        <p className="text-gray-500 mt-2">Explore the latest styles for kids</p>
+      </div>
+
+      {response.loading && <h1 className="text-center text-lg">Loading...</h1>}
+
+      {response.error && (
+        <h1 className="text-center text-red-500">Error occurred...</h1>
+      )}
+
+      {!response.loading && (
+        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {response.data.map((obj) => (
+            <li
+              key={obj._id}
+              className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition overflow-hidden"
+            >
+              <div
+                className="cursor-pointer overflow-hidden"
+                onClick={() => handleProductDetials(obj._id)}
               >
-                <div className="flex flex-col gap-3 items-center justify-center ">
-                  <img
-                    src={`http://localhost:8000/images/${obj.images}`}
-                    alt="img"
-                    className="h-40 w-40 rounded-xl"
-                  />
-                  <h1
-                    className="text-2xl w-max hover:text-blue-500 cursor-pointer hover:font-bold"
-                    onClick={() => handleProductDetials(obj._id)}
-                  >
-                    {obj.name}
-                  </h1>
-                  <p>{obj.price}</p>
-                  <p>{obj.description}</p>
-                  <p>{obj.rating}</p>
+                <img
+                  src={`http://localhost:8000/images/${obj.image}`}
+                  alt={obj.name}
+                  className="w-full h-60 object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+
+              <div className="p-4 space-y-2">
+                <h2
+                  className="font-medium text-gray-900 text-lg cursor-pointer hover:text-blue-600"
+                  onClick={() => handleProductDetials(obj._id)}
+                >
+                  {obj.name}
+                </h2>
+
+                <p className="text-sm text-gray-500 line-clamp-1">
+                  {obj.description}
+                </p>
+
+                <div className="flex items-center justify-between pt-2">
+                  <span className="text-lg font-semibold">₹{obj.price}</span>
 
                   <button
-                    className="h-10 w-35 cursor-pointer bg-emerald-500 rounded-4xl border-none"
                     onClick={() => HandlenewCartItem(obj)}
+                    className="bg-black text-white text-sm px-4 py-2 rounded-lg hover:bg-gray-800 transition"
                   >
-                    Add to cart
+                    Add to Cart
                   </button>
                 </div>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
