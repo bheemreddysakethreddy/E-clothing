@@ -16,21 +16,32 @@ async function HandleLogin(req, res) {
   }
   const user = await User.findOne({ email });
   if (user && (await bcrypt.compare(password, user.password))) {
-    const token = await jwt.sign(
-      { email, id: user._id },
+    const token = jwt.sign(
+      {
+        id: user._id,
+        email: user.email,
+        role: user.role,
+      },
       process.env.SECRET_KEY,
+      { expiresIn: "6d" },
     );
-    return res
-      .status(200)
-      .json({ status: true, message: "user found Success fully", token, user });
+
+    return res.status(200).json({
+      status: true,
+      message: "user found Success fully",
+      token,
+      email: user.email,
+      id: user._id,
+      role: user.role,
+    });
   } else {
     if (!user) {
       return res
-        .status(404)
+        .status(401)
         .json({ status: false, message: "email not found, please signin" });
     } else {
       return res
-        .status(404)
+        .status(401)
         .json({ status: false, message: "invalid Password" });
     }
   }
@@ -67,16 +78,19 @@ async function HandleSignin(req, res) {
     const newUser = await User.create({
       email,
       password: hashedPassword,
+      role: "user",
     });
     const token = await jwt.sign(
-      { email, id: newUser._id },
+      { email, id: newUser._id, role: newUser.role },
       process.env.SECRET_KEY,
     );
     return res.status(201).json({
       status: true,
       message: "new user Created",
       token,
-      user: newUser,
+      id: newUser._id,
+      email: newUser.email,
+      role: newUser.role,
     });
   } catch (err) {
     console.log("error occurred", err);
@@ -85,5 +99,53 @@ async function HandleSignin(req, res) {
       .json({ status: false, message: "Internal Server Error" });
   }
 }
+async function HandleAdminLogin(req, res) {
+  const { email, password } = req.body;
+  if (!email) {
+    return res
+      .status(400)
+      .json({ status: false, message: "email should not be empty" });
+  }
+  if (!password) {
+    return res
+      .status(400)
+      .json({ status: false, message: "Password should not be empty" });
+  }
+  const user = await User.findOne({ email });
+  console.log(user);
+  if (user.role !== "admin") {
+    return res.status(403).json({ status: false, message: "Access Denied" });
+  }
+  if (user && (await bcrypt.compare(password, user.password))) {
+    const token = jwt.sign(
+      {
+        id: user._id,
+        email: user.email,
+        role: user.role,
+      },
+      process.env.SECRET_KEY,
+      { expiresIn: "6d" },
+    );
 
-module.exports = { HandleLogin, HandleSignin };
+    return res.status(200).json({
+      status: true,
+      message: "user found Success fully",
+      token,
+      email: user.email,
+      id: user._id,
+      role: user.role,
+    });
+  } else {
+    if (!user) {
+      return res
+        .status(401)
+        .json({ status: false, message: "email not found, please signin" });
+    } else {
+      return res
+        .status(401)
+        .json({ status: false, message: "invalid Password" });
+    }
+  }
+}
+
+module.exports = { HandleLogin, HandleSignin, HandleAdminLogin };

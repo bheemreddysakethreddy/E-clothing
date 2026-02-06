@@ -20,7 +20,7 @@ const productSchema = new mongoose.Schema(
     },
     sizes: {
       type: [String],
-      enum: ["s", "m", "l", "xl", "XXl"],
+      enum: ["s", "m", "l", "xl", "xxl"],
     },
     stock: {
       type: Number,
@@ -48,6 +48,11 @@ const productSchema = new mongoose.Schema(
         min: 1,
         max: 5,
       },
+    },
+    createdBy:{
+      type:mongoose.Schema.Types.ObjectId,
+      ref:"User",
+      required:true
     },
   },
   { timestamps: true }

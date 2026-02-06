@@ -14,7 +14,11 @@ async function HandleGetAllCartItems(req, res) {
 }
 
 async function HandlenewCartItem(req, res) {
-  const { user, product, quantity } = req.body;
+  const { product, quantity } = req.body;
+  const user = req.user.id;
+  console.log(quantity);
+  // console.log("req.user:", req.user);
+  // console.log("req.body:", req.body);
 
   const excistingCart = await Cart.findOneAndUpdate(
     { user, product },
@@ -42,7 +46,8 @@ async function HandlenewCartItem(req, res) {
 }
 
 async function HandleUpdateCartItem(req, res) {
-  const { user, product, quantityIncrease } = req.body;
+  const { product, quantityIncrease } = req.body;
+  const user = req.user.id;
   console.log(user, product, quantityIncrease);
   let updatedCartProduct;
   if (quantityIncrease) {
@@ -66,7 +71,8 @@ async function HandleUpdateCartItem(req, res) {
 }
 
 async function HandleDeleteCartItem(req, res) {
-  const { user, product } = req.body;
+  const { product } = req.body;
+  const user = req.user.id;
   console.log(user, product);
   const deleteCartProduct = await Cart.findOneAndDelete({ user, product });
   return res.status(201).json({

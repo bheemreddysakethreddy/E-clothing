@@ -7,12 +7,13 @@ const {
   HandleUpdateCartItem,
   HandleDeleteCartItem,
 } = require("../controllers/carts");
+const authMiddleware = require("../middlewares/authmiddlewares");
 
 router
   .route("/")
-  .post(HandlenewCartItem)
-  .patch(HandleUpdateCartItem)
-  .delete(HandleDeleteCartItem);
-router.route("/:user").get(HandleGetAllCartItems)
+  .post(authMiddleware, HandlenewCartItem)
+  .patch(authMiddleware, HandleUpdateCartItem)
+  .delete(authMiddleware, HandleDeleteCartItem);
+router.route("/:user").get(authMiddleware, HandleGetAllCartItems);
 
 module.exports = router;

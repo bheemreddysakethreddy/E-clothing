@@ -26,7 +26,9 @@ mongodbConnection()
 const userRouter = require("./routers/users");
 const productRouter = require("./routers/products");
 const cartRouter = require("./routers/carts");
+const adminRouter = require("./routers/admin");
 
 app.use("/", userRouter);
 app.use("/products", productRouter);
 app.use("/cart", cartRouter);
+app.use("/", adminRouter)

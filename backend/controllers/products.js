@@ -1,19 +1,28 @@
 const Products = require("../models/products");
 
 async function HandleGetAllProducts(req, res) {
-  const { category, trending } = req.query;
-  let products = await Products.find();
-  let data;
+  const { category, trending, name } = req.query;
+  console.log(name);
+  const filter = {};
   if (category) {
-    data = products.filter((obj) => obj.category == req.query.category);
-  } else {
-    data = products.filter((obj) => obj.trending);
+    filter.category = category;
   }
-
+  if (trending) {
+    filter.trending = trending;
+  }
+  if (name) {
+    filter.name = {
+      $regex: `^${name}`,
+      $options: "i", // case-insensitive
+    };
+  }
+  let data = await Products.find(filter);
+  console.log(data);
   return res
     .status(200)
     .json({ status: true, message: "products fetched", data });
 }
+
 async function HandleGetOneProduct(req, res) {
   let id = req.params.id;
   console.log(req.params.id);
@@ -30,78 +39,130 @@ async function HandleGetOneProduct(req, res) {
     data: product,
   });
 }
+
 async function HandleNewProduct(req, res) {
-  let img = req.file;
-  console.log(img);
-  const {
-    name,
-    description,
-    price,
-    sizes,
-    stock,
-    category,
-    subcategory,
-    trending,
-  } = req.body;
-  if (name.length < 4) {
+  try {
+    const img = req.file;
+    const {
+      name,
+      description,
+      price,
+      sizes,
+      stock,
+      category,
+      subcategory,
+      trending,
+    } = req.body;
+
     if (!name) {
       return res
         .status(400)
         .json({ status: false, message: "please enter name" });
-    } else {
-      return res
-        .status(400)
-        .json({ status: false, message: "name is too short,min length is 4" });
     }
-  }
-  if (description.length < 20) {
+    if (name.length < 4) {
+      return res.status(400).json({
+        status: false,
+        message: "name is too short, min length is 4",
+      });
+    }
+
     if (!description) {
       return res
         .status(400)
         .json({ status: false, message: "please enter description" });
-    } else {
+    }
+    if (description.length < 20) {
       return res.status(400).json({
         status: false,
-        message: "description is too short,min length is 20",
+        message: "description is too short, min length is 20",
       });
     }
-  }
-  if (price <= 0) {
-    return res
-      .status(400)
-      .json({ status: false, message: "price should be greater than 0" });
-  }
-  if (!sizes.length) {
-    return res
-      .status(400)
-      .json({ status: false, message: "select sizes available to sell" });
-  }
-  if (stock <= 0) {
-    return res
-      .status(400)
-      .json({ status: false, message: "Stock should not be 0" });
-  }
-  if (!category) {
-    return res
-      .status(400)
-      .json({ status: false, message: "Select the category of the product" });
-  }
-  if (!subcategory) {
-    return res.status(400).json({
+
+    if (!img) {
+      return res
+        .status(400)
+        .json({ status: false, message: "product image is required" });
+    }
+
+    if (!price || price <= 0) {
+      return res
+        .status(400)
+        .json({ status: false, message: "price should be greater than 0" });
+    }
+
+    const finalSizes = Array.isArray(sizes) ? sizes : [sizes];
+    if (!finalSizes.length) {
+      return res.status(400).json({
+        status: false,
+        message: "select sizes available to sell",
+      });
+    }
+
+    if (!stock || stock <= 0) {
+      return res
+        .status(400)
+        .json({ status: false, message: "Stock should not be 0" });
+    }
+
+    if (!category) {
+      return res.status(400).json({
+        status: false,
+        message: "Select the category of the product",
+      });
+    }
+
+    if (!subcategory) {
+      return res.status(400).json({
+        status: false,
+        message: "Select the subCategory of the product",
+      });
+    }
+
+    const product = await Products.create({
+      name,
+      description,
+      price: Number(price),
+      sizes: finalSizes,
+      stock: Number(stock),
+      category,
+      subcategory,
+      trending: trending === "true", // FormData boolean fix
+      image: img.filename,
+      createdBy: req.user.id,
+    });
+
+    return res.status(201).json({ status: true, data: product });
+  } catch (error) {
+    console.error("CREATE PRODUCT ERROR:", error);
+    return res.status(500).json({
       status: false,
-      message: "Select the subCategory of the product",
+      message: "Internal server error",
     });
   }
-  const products = await Products.create({
-    ...req.body,
-    sizes: req.body.sizes.split(","),
-    image: img.filename,
-  });
-  return res.status(201).json({ status: true, data: products });
+}
+
+async function HandleAdminProducts(req, res) {
+  try {
+    const adminId = req.user.id;
+    const products = await Products.find({ createdBy: adminId });
+    if (!products) {
+      return res
+        .status(200)
+        .json({ status: true, message: "no products to fetch", data: [] });
+    }
+    return res
+      .status(200)
+      .json({ status: true, message: "products fetched", data: products });
+  } catch (e) {
+    return res
+      .status(500)
+      .json({ status: false, message: "Internal server error" });
+  }
 }
 
 module.exports = {
   HandleGetAllProducts,
   HandleNewProduct,
   HandleGetOneProduct,
+  HandleAdminProducts,
 };
