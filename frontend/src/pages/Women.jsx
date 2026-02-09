@@ -2,6 +2,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addtoCart } from "../redux/cartSlice";
 import axios from "axios";
+import { useEffect, useState } from "react";
+import { store } from "../redux/store";
+import { productsFetch } from "../redux/thunks/productTunk";
 const Women = () => {
   let response = useSelector((state) => state.products.fetchedData.data);
   const dispatch = useDispatch();
@@ -29,6 +32,20 @@ const Women = () => {
     });
   }
 
+  const [searchQuery, setSearchQuery] = useState("");
+
+  useEffect(() => {
+    let timer = setTimeout(() => {
+      store.dispatch(
+        productsFetch(
+          `http://localhost:8000/products?category=women&name=${searchQuery}`,
+        ),
+      );
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [searchQuery]);
+
   return (
     <div className="max-w-7xl mx-auto px-4 pt-8 pb-16">
       <div className="mb-10 text-center">
@@ -38,6 +55,13 @@ const Women = () => {
         <p className="text-gray-500 mt-2">
           Explore the latest styles for womens
         </p>
+        <input
+          type="text"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          placeholder="search by product name"
+          className="px-3 w-100 mt-2 py-1 border rounded-xl"
+        />
       </div>
 
       {response.loading && <h1 className="text-center text-lg">Loading...</h1>}

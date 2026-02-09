@@ -60,7 +60,7 @@ const router = createBrowserRouter([
       { path: "/women", element: <Women />, loader: getWomensProducts },
       { path: "/kid", element: <Kid />, loader: getKidsProducts },
       { path: "/trending", element: <Trending />, loader: getTrendingProducts },
-      { path: "/productdetail", element: <Productdetails /> },
+      { path: "/productdetail/:productId", element: <Productdetails /> },
 
       {
         element: <Protected />,

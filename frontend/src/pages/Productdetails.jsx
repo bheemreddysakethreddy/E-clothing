@@ -2,24 +2,25 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addtoCart } from "../redux/cartSlice";
+import { useNavigate, useParams } from "react-router-dom";
 
 const Productdetails = () => {
-  const productId = JSON.parse(localStorage.getItem("singleProduct"));
+  const { productId } = useParams();
   const token = localStorage.getItem("token");
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState({});
   const dispatch = useDispatch();
-
-  async function fet() {
-    setLoading(true);
-    let product = await axios(`http://localhost:8000/products/${productId}`);
-    setData(product.data.data);
-    setLoading(false);
-  }
+  const Navigate = useNavigate();
 
   useEffect(() => {
-    fet();
-  }, []);
+    async function fetchproduct() {
+      setLoading(true);
+      let product = await axios(`http://localhost:8000/products/${productId}`);
+      setData(product.data.data);
+      setLoading(false);
+    }
+    fetchproduct();
+  }, [productId]);
 
   if (loading) {
     return (
@@ -75,7 +76,6 @@ const Productdetails = () => {
           <h1 className="text-2xl md:text-3xl font-semibold">{data.name}</h1>
 
           <p className="text-2xl font-bold text-gray-900">₹{data.price}</p>
-
 
           <div className="flex gap-3 mt-1">
             {data.trending && (

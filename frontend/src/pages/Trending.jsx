@@ -2,6 +2,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { addtoCart } from "../redux/cartSlice";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useEffect, useState } from "react";
+import { store } from "../redux/store";
+import { productsFetch } from "../redux/thunks/productTunk";
 
 const Trending = () => {
   const token = localStorage.getItem("token");
@@ -43,6 +46,20 @@ const Trending = () => {
     );
   }
 
+  const [searchQuery, setSearchQuery] = useState("");
+
+  useEffect(() => {
+    let timer = setTimeout(() => {
+      store.dispatch(
+        productsFetch(
+          `http://localhost:8000/products?trending=true&name=${searchQuery}`,
+        ),
+      );
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [searchQuery]);
+
   return (
     <div className="max-w-7xl mx-auto px-4 pt-8 pb-16">
       <div className="mb-10 text-center">
@@ -50,6 +67,13 @@ const Trending = () => {
           Trending Collection
         </h1>
         <p className="text-gray-500 mt-2">Explore the latest collections</p>
+        <input
+          type="text"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          placeholder="search by product name"
+          className="px-3 w-100 mt-2 py-1 border rounded-xl"
+        />
       </div>
 
       {response.loading && <h1 className="text-center text-lg">Loading...</h1>}

@@ -2,24 +2,23 @@ import { useSelector, useDispatch } from "react-redux";
 import { addtoCart } from "../redux/cartSlice";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { productsFetch } from "../redux/thunks/productTunk";
 import { store } from "../redux/store";
 
 const Men = () => {
   const token = localStorage.getItem("token");
   let response = useSelector((state) => state.products.fetchedData.data);
-  const Navigate = useNavigate();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   async function handleProductDetials(id) {
-    localStorage.setItem("singleProduct", JSON.stringify(id));
-    Navigate("/productdetail");
+    navigate(`/productdetail/${id}`);
   }
 
   async function HandlenewCartItem(obj) {
     if (!token) {
-      Navigate("/login");
+      navigate("/login");
       return;
     }
     dispatch(

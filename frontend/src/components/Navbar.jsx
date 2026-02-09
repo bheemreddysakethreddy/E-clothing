@@ -37,11 +37,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
         {/* LOGO */}
         <div
-          className="flex items-center gap-3 cursor-pointer"
+          className="flex items-center gap-3 relative cursor-pointer"
           onClick={() => navigate("/")}
         >
-          <img src="vite.svg" alt="logo" className="h-8 w-8" />
-          <h1 className="text-lg font-semibold">E-Clothing</h1>
+          <img src="vite.png" alt="logo" className="h-20 w-34" />
+          <h1 className="text-lg font-semibold absolute -right-16">
+            E-Clothing
+          </h1>
         </div>
 
         {/* DESKTOP NAV (UNCHANGED) */}
