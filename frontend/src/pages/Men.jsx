@@ -9,6 +9,9 @@ import { store } from "../redux/store";
 const Men = () => {
   const token = localStorage.getItem("token");
   let response = useSelector((state) => state.products.fetchedData.data);
+  console.log(response);
+  const [pageNumber, setPageNumber] = useState(0);
+  const pages = Math.ceil(response.length / 3);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -51,16 +54,24 @@ const Men = () => {
     let timer = setTimeout(() => {
       store.dispatch(
         productsFetch(
-          `http://localhost:8000/products?category=men&name=${searchQuery}`,
+          `http://localhost:8000/products/?category=men&&name=${searchQuery}&&skip=${pageNumber * 3}&&limit=3`,
         ),
       );
     }, 1000);
 
     return () => clearTimeout(timer);
-  }, [searchQuery]);
+  }, [searchQuery, pageNumber]);
+
+  function classbtn() {
+    return "border-2 px-2 py-1 rounded-lg cursor-pointer";
+  }
+
+  function handlePage(i) {
+    setPageNumber(i);
+  }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 pt-8 pb-16">
+    <div className="max-w-7xl mx-auto px-4 pt-8 pb-16 flex flex-col items-center justify-center">
       <div className="mb-10 text-center">
         <h1 className="text-2xl md:text-3xl font-semibold">Men's Collection</h1>
         <p className="text-gray-500 mt-2">Explore the latest styles for mens</p>
@@ -130,6 +141,24 @@ const Men = () => {
             </li>
           ))}
         </ul>
+      )}
+      {!response.loading && (
+        <div className="flex gap-2 mt-3">
+          <button className={classbtn()}>prev</button>
+          {Array(pages)
+            .fill(0)
+            .map((_, index) => (
+              <div>
+                <button
+                  className={classbtn()}
+                  onClick={() => handlePage(index)}
+                >
+                  {index + 1}
+                </button>
+              </div>
+            ))}
+          <button className={classbtn()}>next</button>
+        </div>
       )}
     </div>
   );

@@ -1,8 +1,7 @@
 const Products = require("../models/products");
 
 async function HandleGetAllProducts(req, res) {
-  const { category, trending, name } = req.query;
-  console.log(name);
+  const { category, trending, name, skip, limit } = req.query;
   const filter = {};
   if (category) {
     filter.category = category;
@@ -16,11 +15,14 @@ async function HandleGetAllProducts(req, res) {
       $options: "i", // case-insensitive
     };
   }
-  let data = await Products.find(filter);
-  console.log(data);
-  return res
-    .status(200)
-    .json({ status: true, message: "products fetched", data });
+  let data = await Products.find(filter).skip(skip).limit(limit);
+  let length = await Products.countDocuments(filter);
+  return res.status(200).json({
+    status: true,
+    message: "products fetched",
+    data,
+    length,
+  });
 }
 
 async function HandleGetOneProduct(req, res) {

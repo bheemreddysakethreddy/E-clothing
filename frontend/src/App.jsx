@@ -16,7 +16,7 @@ import MainLayout from "./utils/mainLayout";
 
 async function getMensProducts() {
   await store.dispatch(
-    productsFetch("http://localhost:8000/products/?category=men"),
+    productsFetch("http://localhost:8000/products/?category=men&&skip=0&&limit=3"),
   );
   return null;
 }
