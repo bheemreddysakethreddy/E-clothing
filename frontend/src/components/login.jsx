@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -12,10 +12,16 @@ const Login = () => {
     confirmPassword: "",
   });
   const [errorMessage, setErrorMessage] = useState("");
+  const [validOtp, setValidOtp] = useState(false);
+  const [showOtpArea, setShowOtpArea] = useState(false);
+  const [otpSending, setOtpSending] = useState(false);
+  const [otp, setOtp] = useState(new Array(6).fill(""));
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const otpRef = useRef(null);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setDetails({ email: "", password: "", confirmPassword: "" });
   }, [loginStatus]);
 
@@ -65,6 +71,54 @@ const Login = () => {
     setDetails((prev) => ({ ...prev, [name]: value }));
   }
 
+  async function handleOtp() {
+    setErrorMessage("");
+    try {
+      if (!details.email) {
+        return setErrorMessage("email should not be empty");
+      }
+      setOtpSending(true);
+      const res = await axios.post("http://localhost:8000/signin/otp", {
+        email: details.email,
+        password: details.password,
+        confirmPassword: details.confirmPassword,
+      });
+      console.log(res);
+      setErrorMessage(res.data.message);
+      setShowOtpArea(true);
+
+      setValidOtp();
+    } catch (e) {
+      console.log(e);
+      setErrorMessage("user already exist");
+    } finally {
+      setOtpSending(false);
+    }
+  }
+
+  async function verifyOtp() {
+    const res = await axios.post("http://localhost:8000/signin/otp/verify", {
+      email: details.email,
+      otp: otp.reduce((acc, cur) => acc + cur, ""),
+    });
+    console.log(res);
+    if (res.data.status) {
+      setErrorMessage(res.data.message);
+      setValidOtp(true);
+      setShowOtpArea(false);
+    }
+  }
+
+  function handleinputOtp(e, index) {
+    if (isNaN(e.target.value)) return false;
+    setOtp((prev) =>
+      prev.map((ele, i) => (i === index ? e.target.value : ele)),
+    );
+    if (e.target.nextSibling) {
+      e.target.nextSibling.focus();
+    }
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
@@ -83,32 +137,94 @@ const Login = () => {
         {/* Form */}
         <form onSubmit={FetchUser} className="space-y-5">
           <div>
-            <label className="block text-sm font-medium mb-1">Email</label>
-            <input
-              type="email"
-              name="email"
-              value={details.email}
-              onChange={HandleFormDetails}
-              placeholder="you@example.com"
-              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-gray-300"
-              required
-            />
+            {!validOtp && (
+              <div>
+                <label className="block text-sm font-medium mb-1">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={details.email}
+                  onChange={HandleFormDetails}
+                  placeholder="you@example.com"
+                  className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-gray-300"
+                  required
+                />
+              </div>
+            )}
+
+            {!loginStatus && !validOtp && (
+              <div className=" w-full flex justify-center items-center">
+                <button
+                  className="border mt-2 py-1 px-4 rounded-lg bg-green-500 text-xl"
+                  type="button"
+                  onClick={handleOtp}
+                >
+                  {otpSending
+                    ? "sending..."
+                    : showOtpArea
+                      ? "otp sent"
+                      : "send otp"}
+                </button>
+              </div>
+            )}
           </div>
 
-          <div>
-            <label className="block text-sm font-medium mb-1">Password</label>
-            <input
-              type="password"
-              name="password"
-              value={details.password}
-              onChange={HandleFormDetails}
-              placeholder="••••••••"
-              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-gray-300"
-              required
-            />
-          </div>
+          {showOtpArea && (
+            <div>
+              {otp.map((_, index) => (
+                <input
+                  key={index}
+                  ref={otpRef}
+                  className="border w-10 h-10 pl-4 mr-6 rounded-lg"
+                  maxLength={1}
+                  onChange={(e) => handleinputOtp(e, index)}
+                  onFocus={(e) => e.target.select}
+                  autoFocus={index == 0}
+                />
+              ))}
+              <div className=" w-full flex justify-center items-center">
+                <button
+                  className="border mt-2 py-1 px-4 rounded-lg bg-green-500 text-xl"
+                  type="button"
+                  onClick={verifyOtp}
+                >
+                  Verify Otp
+                </button>
+              </div>
+            </div>
+          )}
 
-          {!loginStatus && (
+          {loginStatus && (
+            <div>
+              <label className="block text-sm font-medium mb-1">Password</label>
+              <input
+                type="password"
+                name="password"
+                value={details.password}
+                onChange={HandleFormDetails}
+                placeholder="••••••••"
+                className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-gray-300"
+                required
+              />
+            </div>
+          )}
+
+          {!loginStatus && validOtp && (
+            <div>
+              <label className="block text-sm font-medium mb-1">Password</label>
+              <input
+                type="password"
+                name="password"
+                value={details.password}
+                onChange={HandleFormDetails}
+                placeholder="••••••••"
+                className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-gray-300"
+                required
+              />
+            </div>
+          )}
+
+          {!loginStatus && validOtp && (
             <div>
               <label className="block text-sm font-medium mb-1">
                 Confirm Password
@@ -131,12 +247,22 @@ const Login = () => {
           )}
 
           {/* Submit */}
-          <button
-            type="submit"
-            className="w-full bg-black text-white py-2.5 rounded-lg font-medium hover:bg-gray-800 transition"
-          >
-            {loginStatus ? "Login" : "Sign Up"}
-          </button>
+          {loginStatus && (
+            <button
+              type="submit"
+              className="w-full bg-black text-white py-2.5 rounded-lg font-medium hover:bg-gray-800 transition"
+            >
+              {loginStatus ? "Login" : "Sign Up"}
+            </button>
+          )}
+          {!loginStatus && validOtp && (
+            <button
+              type="submit"
+              className="w-full bg-black text-white py-2.5 rounded-lg font-medium hover:bg-gray-800 transition"
+            >
+              {loginStatus ? "Login" : "Sign Up"}
+            </button>
+          )}
         </form>
 
         {/* Switch Auth */}
