@@ -7,7 +7,7 @@ const {
   HandleUpdateCartItem,
   HandleDeleteCartItem,
 } = require("../controllers/carts");
-const authMiddleware = require("../middlewares/authmiddlewares");
+const authMiddleware = require("../middlewares/authMiddlewares");
 
 router
   .route("/")

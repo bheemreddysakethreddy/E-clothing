@@ -14,8 +14,11 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-const { HandleNewProduct, HandleAdminProducts } = require("../controllers/products");
-const roleMiddleware = require("../middlewares/rolemiddleware");
+const {
+  HandleNewProduct,
+  HandleAdminProducts,
+} = require("../controllers/products");
+const roleMiddleware = require("../middlewares/roleMiddleware");
 const authMiddleware = require("../middlewares/authMiddlewares");
 const { HandleAdminLogin } = require("../controllers/users");
 
@@ -26,7 +29,8 @@ router
     roleMiddleware("admin"),
     upload.single("image"),
     HandleNewProduct,
-  ).get(authMiddleware, roleMiddleware("admin"),HandleAdminProducts)
+  )
+  .get(authMiddleware, roleMiddleware("admin"), HandleAdminProducts);
 router.route("/auth/admin/login").post(HandleAdminLogin);
 
 module.exports = router;
