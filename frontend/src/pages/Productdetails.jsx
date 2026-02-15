@@ -13,13 +13,17 @@ const Productdetails = () => {
   const Navigate = useNavigate();
 
   useEffect(() => {
+    let timer;
     async function fetchproduct() {
       setLoading(true);
       let product = await axios(`http://localhost:8000/products/${productId}`);
       setData(product.data.data);
-      setLoading(false);
+      timer = setTimeout(() => {
+        setLoading(false);
+      }, 300);
     }
     fetchproduct();
+    return () => clearTimeout(timer);
   }, [productId]);
 
   if (loading) {
@@ -64,11 +68,11 @@ const Productdetails = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* IMAGE SECTION */}
 
-        <div className="flex justify-center">
+        <div className="flex justify-center h-[80%]">
           <img
             src={`http://localhost:8000/images/${data.image}`}
             alt={data.name}
-            className="w-full max-w-md rounded-2xl object-cover shadow"
+            className="w-full max-w-md rounded-2xl h-[400px] object-contain shadow"
           />
         </div>
 
