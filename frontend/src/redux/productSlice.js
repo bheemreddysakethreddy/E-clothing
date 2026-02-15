@@ -9,7 +9,11 @@ export const productSlice = createSlice({
       error: null,
     },
   },
-
+reducers:{
+  backtoLoading:(state)=>{
+    state.fetchedData.loading = true
+  }
+},
   extraReducers: (builder) => {
     builder.addCase(productsFetch.pending, (state) => {
       state.fetchedData.loading = true;
@@ -24,5 +28,5 @@ export const productSlice = createSlice({
     });
   },
 });
-export const {} = productSlice.actions;
+export const {backtoLoading} = productSlice.actions;
 export default productSlice.reducer;
