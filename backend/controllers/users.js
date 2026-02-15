@@ -6,13 +6,13 @@ const nodemailer = require("nodemailer");
 let transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "sakethbheem@gmail.com",
-    pass: "nxisvsnmaetvdpzb",
+    user: process.env.ADMIN_EMAIL,
+    pass: process.env.ADMIN_PASS_KEY,
   },
 });
 function sendOtpToEmail(email, otp) {
   return transporter.sendMail({
-    from: "sakethbheem@gamil.com",
+    from: process.env.ADMIN_EMAIL,
     to: email,
     subject: "Signup otp for email verifivation to e-commerce application",
     html: `
