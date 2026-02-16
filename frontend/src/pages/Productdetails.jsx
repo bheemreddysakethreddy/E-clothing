@@ -16,7 +16,7 @@ const Productdetails = () => {
     let timer;
     async function fetchproduct() {
       setLoading(true);
-      let product = await axios(`http://localhost:8000/products/${productId}`);
+      let product = await axios(`${import.meta.env.VITE_API_URL}/products/${productId}`);
       setData(product.data.data);
       timer = setTimeout(() => {
         setLoading(false);

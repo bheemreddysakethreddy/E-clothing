@@ -13,7 +13,7 @@ const ProductsPages = ({ category }) => {
   console.log(response.loading);
   const [pageNumber, setPageNumber] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
-  const limit = 3;
+  const limit = 4;
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
