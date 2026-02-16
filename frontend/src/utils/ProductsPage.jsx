@@ -39,7 +39,7 @@ const ProductsPages = ({ category }) => {
     return () => clearTimeout(timer);
   }, [searchQuery, pageNumber, category, limit, dispatch]);
 
-  async function handleProductDetials(id) {
+  function handleProductDetials(id) {
     navigate(`/productdetail/${id}`);
   }
 

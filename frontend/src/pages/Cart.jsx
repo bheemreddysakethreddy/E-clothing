@@ -69,6 +69,11 @@ const Cart = () => {
       },
     });
   }
+
+  function handleProduct(id) {
+    Navigate(`/productdetail/${id}`);
+  }
+
   const total = cart.data.reduce(
     (acc, cur) => acc + cur.product.price * cur.quantity,
     0,
@@ -101,14 +106,18 @@ const Cart = () => {
                 <img
                   src={`${import.meta.env.VITE_API_URL}/images/${obj.product.image}`}
                   alt={obj.product.name}
-                  className="h-28 w-28 rounded-xl object-cover"
+                  className="h-28 w-28 rounded-xl object-cover cursor-pointer"
+                  onClick={() => handleProduct(obj.product._id)}
                 />
 
                 {/* DETAILS */}
                 <div className="flex-1 flex flex-col justify-between">
                   {/* TOP */}
                   <div>
-                    <h2 className="text-base font-medium">
+                    <h2
+                      className="text-base font-medium hover:text-blue-500 cursor-pointer"
+                      onClick={() => handleProduct(obj.product._id)}
+                    >
                       {obj.product.name}
                     </h2>
 
