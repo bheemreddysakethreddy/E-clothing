@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 async function mongodbConnection() {
   try {
-    await mongoose.connect(`${process.env.MONGODB_CONNECTION_PATH},eclothing`);
+    await mongoose.connect(`${process.env.MONGODB_CONNECTION_PATH}`);
     console.log("connected to database");
   } catch (err) {
     console.log("Connection Failed", err);
