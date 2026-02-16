@@ -154,7 +154,7 @@ export default function Order() {
               className="flex gap-6 items-center bg-white border rounded-2xl px-5 py-5"
             >
               <img
-                src={`http://localhost:8000/images/${obj.product.image}`}
+                src={`${import.meta.env.VITE_API_URL}/images/${obj.product.image}`}
                 alt={obj.product.name}
                 className="h-24 w-24 rounded-xl object-cover"
               />

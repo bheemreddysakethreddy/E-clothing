@@ -6,7 +6,7 @@ const Products = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/admin/products", {
+      .get(`${import.meta.env.VITE_API_URL}admin/products`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

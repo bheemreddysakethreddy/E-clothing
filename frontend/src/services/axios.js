@@ -3,7 +3,7 @@ import axios from "axios";
 // create an axios instance
 
 export const axiosInstance = axios.create({
-  baseURL: "http://localhost:8000/", // Your API's base URL
+  baseURL: import.meta.env.VITE_API_URL, // Your API's base URL
   timeout: 10000, // Request timeout in milliseconds
 });
 

@@ -122,7 +122,7 @@ const ProductsPages = ({ category }) => {
                 onClick={() => handleProductDetials(obj._id)}
               >
                 <img
-                  src={`http://localhost:8000/images/${obj.image}`}
+                  src={`${import.meta.env.VITE_API_URL}/images/${obj.image}`}
                   alt={obj.name}
                   className="w-full h-60 object-contain hover:scale-105 transition-transform duration-300"
                 />

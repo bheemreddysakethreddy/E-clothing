@@ -31,7 +31,7 @@ const Login = () => {
       try {
         setErrorMessage("");
 
-        const res = await axios.post("http://localhost:8000/login", {
+        const res = await axios.post(`${import.meta.env.VITE_API_URL}/login`, {
           email: details.email,
           password: details.password,
         });
@@ -53,7 +53,7 @@ const Login = () => {
           setErrorMessage("passwords not matching");
           return;
         }
-        const res = await axios.post("http://localhost:8000/signin", {
+        const res = await axios.post(`${import.meta.env.VITE_API_URL}/signin`, {
           email: details.email,
           password: details.password,
           confirmPassword: details.confirmPassword,
@@ -78,7 +78,7 @@ const Login = () => {
         return setErrorMessage("email should not be empty");
       }
       setOtpSending(true);
-      const res = await axios.post("http://localhost:8000/signin/otp", {
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/signin/otp`, {
         email: details.email,
         password: details.password,
         confirmPassword: details.confirmPassword,
@@ -97,7 +97,7 @@ const Login = () => {
   }
 
   async function verifyOtp() {
-    const res = await axios.post("http://localhost:8000/signin/otp/verify", {
+    const res = await axios.post(`${import.meta.env.VITE_API_URL}/signin/otp/verify`, {
       email: details.email,
       otp: otp.reduce((acc, cur) => acc + cur, ""),
     });

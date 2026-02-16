@@ -70,7 +70,7 @@ const Productdetails = () => {
 
         <div className="flex justify-center h-[80%]">
           <img
-            src={`http://localhost:8000/images/${data.image}`}
+            src={`${import.meta.env.VITE_API_URL}/images/${data.image}`}
             alt={data.name}
             className="w-full max-w-md rounded-2xl h-[400px] object-contain shadow"
           />

@@ -45,7 +45,7 @@ const AddProduct = () => {
 
     formData.append("image", image);
 
-    await axios.post("http://localhost:8000/admin/products", formData, {
+    await axios.post(`${import.meta.env.VITE_API_URL}/admin/products`, formData, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },

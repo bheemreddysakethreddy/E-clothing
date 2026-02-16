@@ -22,7 +22,7 @@ const Cart = () => {
       }),
     );
     await axios.patch(
-      "http://localhost:8000/cart",
+      `${import.meta.env.VITE_API_URL}/cart`,
       {
         product: obj.product._id,
         quantityIncrease: false,
@@ -41,7 +41,7 @@ const Cart = () => {
       }),
     );
     await axios.patch(
-      "http://localhost:8000/cart",
+      `${import.meta.env.VITE_API_URL}/cart`,
       {
         product: obj.product._id,
         quantityIncrease: true,
@@ -60,7 +60,7 @@ const Cart = () => {
       }),
     );
 
-    await axios.delete("http://localhost:8000/cart", {
+    await axios.delete(`${import.meta.env.VITE_API_URL}/cart`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -99,7 +99,7 @@ const Cart = () => {
               <div className="flex gap-6">
                 {/* IMAGE */}
                 <img
-                  src={`http://localhost:8000/images/${obj.product.image}`}
+                  src={`${import.meta.env.VITE_API_URL}/images/${obj.product.image}`}
                   alt={obj.product.name}
                   className="h-28 w-28 rounded-xl object-cover"
                 />
