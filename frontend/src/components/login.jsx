@@ -26,7 +26,7 @@ const Login = () => {
       try {
         setErrorMessage("");
 
-        const res = await axios.post("http://localhost:8000/login", {
+        const res = await axios.post(`${import.meta.env.VITE_API_URL}/login`, {
           email: details.email,
           password: details.password,
         });
@@ -48,7 +48,7 @@ const Login = () => {
           setErrorMessage("passwords not matching");
           return;
         }
-        const res = await axios.post("http://localhost:8000/signin", {
+        const res = await axios.post(`${import.meta.env.VITE_API_URL}/signin`, {
           email: details.email,
           password: details.password,
           confirmPassword: details.confirmPassword,
