@@ -67,6 +67,9 @@ const ProductsPages = ({ category }) => {
   function classbtn() {
     return "border-2 px-2 py-1 rounded-lg cursor-pointer";
   }
+  function classbtnDisable() {
+    return "border-2 px-2 py-1 rounded-lg cursor-not-allowed border-gray-300 ";
+  }
 
   function handlePage(i) {
     setPageNumber(i);
@@ -158,7 +161,16 @@ const ProductsPages = ({ category }) => {
 
       {!response.loading && response.data.length && (
         <div className="flex justify-center items-center gap-2 mt-3 w-full">
-          <button className={classbtn()}>prev</button>
+          <button
+            className={pageNumber <= 0 ? classbtnDisable() : classbtn()}
+            onClick={() => (
+              setPageNumber((prev) => prev - 1),
+              dispatch(backtoLoading())
+            )}
+            disabled={pageNumber <= 0}
+          >
+            prev
+          </button>
           {Array(Math.ceil(response.data.length / limit))
             .fill(0)
             .map((_, index) => (
@@ -171,7 +183,20 @@ const ProductsPages = ({ category }) => {
                 </button>
               </div>
             ))}
-          <button className={classbtn()}>next</button>
+          <button
+            className={
+              pageNumber >= Math.ceil(response.data.length / limit) - 1
+                ? classbtnDisable()
+                : classbtn()
+            }
+            onClick={() => (
+              setPageNumber((prev) => prev + 1),
+              dispatch(backtoLoading())
+            )}
+            disabled={pageNumber >= Math.ceil(response.data.length / limit) - 1}
+          >
+            next
+          </button>
         </div>
       )}
     </div>
