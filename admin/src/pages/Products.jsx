@@ -4,14 +4,15 @@ import { axiosInstance } from "../services/axiosinterceptors";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
-  const[loading,setloading]=useState(true) 
+  const [loading, setloading] = useState(true);
   const navigate = useNavigate();
 
   function getAddedProducts() {
-    setloading(true)
-   axiosInstance
+    setloading(true);
+    axiosInstance
       .get(`/admin/auth/products`)
-      .then((res) => (console.log(res.data.data), setProducts(res.data.data))).finally(setloading(false));
+      .then((res) => (console.log(res.data.data), setProducts(res.data.data)))
+      .finally(setloading(false));
   }
 
   useEffect(() => {
@@ -40,6 +41,11 @@ const Products = () => {
   return (
     <div>
       <h2 className="text-2xl font-bold mb-6">My Products</h2>
+      {loading && (
+        <div>
+          <p>Loading...</p>
+        </div>
+      )}
       {!loading && products.length && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((p) => (
@@ -78,7 +84,7 @@ const Products = () => {
           ))}
         </div>
       )}
-      {!products.length && (
+      {!loading && !products.length && (
         <div>
           <p>no products added</p>
         </div>
