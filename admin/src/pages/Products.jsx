@@ -6,8 +6,8 @@ const Products = () => {
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
 
-  function getAddedProducts() {
-    axiosInstance
+  async function getAddedProducts() {
+   await axiosInstance
       .get(`/admin/auth/products`)
       .then((res) => (console.log(res.data.data), setProducts(res.data.data)));
   }
