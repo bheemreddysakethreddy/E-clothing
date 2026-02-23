@@ -9,7 +9,7 @@ const Products = () => {
   function getAddedProducts() {
     axiosInstance
       .get(`/admin/auth/products`)
-      .then((res) => setProducts(res.data.data));
+      .then((res) => (console.log(res.data.data), setProducts(res.data.data)));
   }
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const Products = () => {
   return (
     <div>
       <h2 className="text-2xl font-bold mb-6">My Products</h2>
-      {products.length && (
+      {products && products.length && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((p) => (
             <div
