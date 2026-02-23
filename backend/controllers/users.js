@@ -104,7 +104,7 @@ async function HandleSignin(req, res) {
 
 async function HandleAdminLogin(req, res) {
   const { email, password } = req.body;
-  if (!email) {
+    if (!email) { 
     return res
       .status(400)
       .json({ status: false, message: "email should not be empty" });

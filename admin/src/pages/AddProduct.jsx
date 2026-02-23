@@ -1,5 +1,6 @@
 import { useState } from "react";
-import axios from "axios";
+import { useNavigate, useParams } from "react-router-dom";
+import { axiosInstance } from "../services/axiosinterceptors";
 
 const AddProduct = () => {
   const [form, setForm] = useState({
@@ -12,7 +13,8 @@ const AddProduct = () => {
     trending: false,
     sizes: [],
   });
-
+  const params = useParams();
+  const navigate = useNavigate();
   const [image, setImage] = useState(null);
 
   const handleChange = (e) => {
@@ -31,7 +33,6 @@ const AddProduct = () => {
       setForm((prev) => ({ ...prev, [name]: value }));
     }
   };
-
   const handleSubmit = async () => {
     const formData = new FormData();
 
@@ -42,21 +43,23 @@ const AddProduct = () => {
         formData.append(key, form[key]);
       }
     });
-
     formData.append("image", image);
 
-    await axios.post(`${import.meta.env.VITE_API_URL}/admin/products`, formData, {
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-      },
-    });
-
-    alert("Product added successfully");
+    if (params.id) {
+      await axiosInstance.patch(`/admin/product/edit/${params.id}`, formData);
+      navigate("/");
+    } else {
+      await axiosInstance.post(`/admin/auth/products`, formData);
+      alert("Product added successfully");
+      navigate("/");
+    }
   };
 
   return (
     <div className="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow">
-      <h2 className="text-2xl font-bold mb-8">Add New Product</h2>
+      <h2 className="text-2xl font-bold mb-8">
+        {params.id ? "Edit product" : "Add New Product"}
+      </h2>
 
       {/* GRID */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -150,7 +153,7 @@ const AddProduct = () => {
         onClick={handleSubmit}
         className="mt-8 w-full bg-gray-900 text-white py-3 rounded-lg hover:bg-gray-800 transition"
       >
-        Add Product
+        {params.id ? "Edit product" : "Add Product"}
       </button>
     </div>
   );

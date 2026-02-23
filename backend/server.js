@@ -31,4 +31,4 @@ const adminRouter = require("./routers/admin");
 app.use("/", userRouter);
 app.use("/products", productRouter);
 app.use("/cart", cartRouter);
-app.use("/", adminRouter)
+app.use("/admin", adminRouter)

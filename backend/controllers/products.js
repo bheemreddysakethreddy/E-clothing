@@ -162,9 +162,128 @@ async function HandleAdminProducts(req, res) {
   }
 }
 
+async function handleDeleteProductById(req, res) {
+  console.log(req.params);
+  const { id } = req.params;
+  const deletedProduct = await Products.findByIdAndDelete(id);
+  return res.status(200).json({
+    status: true,
+    message: "product deleted Successfully",
+    data: deletedProduct,
+  });
+}
+
+async function handleEditProductById(req, res) {
+  try {
+    const { id } = req.params;
+    console.log(req.url, id);
+    const img = req.file;
+    console.log(req.body);
+    const {
+      name,
+      description,
+      price,
+      sizes,
+      stock,
+      category,
+      subcategory,
+      trending,
+    } = req.body;
+
+    console.log("adding");
+
+    if (!name) {
+      return res
+        .status(400)
+        .json({ status: false, message: "please enter name" });
+    }
+    if (name.length < 4) {
+      return res.status(400).json({
+        status: false,
+        message: "name is too short, min length is 4",
+      });
+    }
+
+    if (!description) {
+      return res
+        .status(400)
+        .json({ status: false, message: "please enter description" });
+    }
+    if (description.length < 20) {
+      return res.status(400).json({
+        status: false,
+        message: "description is too short, min length is 20",
+      });
+    }
+
+    if (!img) {
+      return res
+        .status(400)
+        .json({ status: false, message: "product image is required" });
+    }
+
+    if (!price || price <= 0) {
+      return res
+        .status(400)
+        .json({ status: false, message: "price should be greater than 0" });
+    }
+
+    const finalSizes = Array.isArray(sizes) ? sizes : [sizes];
+    if (!finalSizes.length) {
+      return res.status(400).json({
+        status: false,
+        message: "select sizes available to sell",
+      });
+    }
+
+    if (!stock || stock <= 0) {
+      return res
+        .status(400)
+        .json({ status: false, message: "Stock should not be 0" });
+    }
+
+    if (!category) {
+      return res.status(400).json({
+        status: false,
+        message: "Select the category of the product",
+      });
+    }
+
+    if (!subcategory) {
+      return res.status(400).json({
+        status: false,
+        message: "Select the subCategory of the product",
+      });
+    }
+
+    const product = await Products.findByIdAndUpdate(id, {
+      name,
+      description,
+      price: Number(price),
+      sizes: finalSizes,
+      stock: Number(stock),
+      category,
+      subcategory,
+      trending: trending === "true",
+      image: img.filename,
+      createdBy: req.user.id,
+    });
+
+    return res.status(201).json({ status: true, data: product });
+  } catch (error) {
+    console.error("CREATE PRODUCT ERROR:", error);
+    return res.status(500).json({
+      status: false,
+      message: "Internal server error",
+    });
+  }
+}
+
 module.exports = {
   HandleGetAllProducts,
   HandleNewProduct,
   HandleGetOneProduct,
   HandleAdminProducts,
+  handleDeleteProductById,
+  handleEditProductById,
 };
